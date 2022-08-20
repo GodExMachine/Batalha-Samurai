@@ -1,4 +1,4 @@
-# jogodeluta
+#criando um jogo de luta em Java Script.
 
 ## 1º foi criando o canvas e e inserido as propriedades de velocidade, posição e gravidade.
 https://deployjogoluta1.netlify.app
@@ -8,3 +8,5 @@ https://deployjogoluta1.netlify.app
 https://deploy2jogoluta.netlify.app
 ![image](https://user-images.githubusercontent.com/88566095/185768574-6f629a9b-163c-46d0-8f84-30ae60a508b8.png)
 
+Jogo criando com base no video do you tube de Chris Courses
+https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
