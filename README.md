@@ -12,6 +12,11 @@ https://deploy2jogoluta.netlify.app
 https://deploy3jogoluta.netlify.app/
 ![Sem título](https://user-images.githubusercontent.com/88566095/185822090-dcafeb2b-b088-4931-951e-ee2e597199d8.png)
 
+## 4º adionado barras de vida funcionais.
+https://deploy4jogodeluta.netlify.app/
+![image](https://user-images.githubusercontent.com/88566095/186041512-7db4a0a8-7af4-4f02-ac87-b236b2da1fed.png)
+
+
 
 Jogo criando com base no video do you tube de Chris Courses
 https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
