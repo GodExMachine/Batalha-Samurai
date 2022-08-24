@@ -20,6 +20,11 @@ https://deploy4jogodeluta.netlify.app/
 https://deploy5jogodeluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/186070024-f2670b5b-304d-4bac-91f1-8eea21fa2d50.png)
 
+## 6º Adcionadas as sprites do jogador para ficar parado atacar pular e cair.
+https://deploy6jogodeluta.netlify.app/
+![samurai](https://user-images.githubusercontent.com/88566095/186308553-7c1d8407-18a0-4250-9fc1-5faca89b6906.png)
+
+
 
 
 Jogo criando com base no video do you tube de Chris Courses
