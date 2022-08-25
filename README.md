@@ -16,7 +16,7 @@ https://deploy3jogoluta.netlify.app/
 https://deploy4jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/186041512-7db4a0a8-7af4-4f02-ac87-b236b2da1fed.png)
 
-## 5º Criada a animação para loja na imagen ao fundo
+## 5º Criada a animação para loja na imagen ao fundo.
 https://deploy5jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/186070024-f2670b5b-304d-4bac-91f1-8eea21fa2d50.png)
 
@@ -24,7 +24,7 @@ https://deploy5jogoluta.netlify.app/
 https://deploy6jogoluta.netlify.app/
 ![samurai](https://user-images.githubusercontent.com/88566095/186308553-7c1d8407-18a0-4250-9fc1-5faca89b6906.png)
 
-## 7º Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair
+## 7º Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair.
 https://deploy7jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/186788677-a176b0cc-c565-42fc-b866-dd19f5f45085.png)
 
