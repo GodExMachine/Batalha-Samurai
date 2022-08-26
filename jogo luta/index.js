@@ -28,6 +28,7 @@ const shop = new Sprite({
   scale: 2.67,
   framesMax: 6
   
+  
   })
 
 
@@ -41,9 +42,40 @@ velocity:{
     x:0,
     y:0
 },
-offSet:{
+offset:{
   x:0,
   y:0
+},
+ imageSrc: './img/samuraiMack/Idle.png',
+ scale: 2.5,
+ framesMax: 8,
+ offset:{
+  x: 215,
+  y: 156
+},
+sprites:{
+  idle:{
+    imageSrc: './img/samuraiMack/Idle.png',
+    framesMax: 8,
+  },
+  run:{
+    imageSrc: './img/samuraiMack/Run.png',
+    framesMax: 8,   
+  },
+  jump:{
+    imageSrc: './img/samuraiMack/Jump.png',
+    framesMax: 2,
+  },
+  fall:{
+    imageSrc: './img/samuraiMack/Fall.png',
+    framesMax: 2,  
+  },
+  attack1:{
+    imageSrc: './img/samuraiMack/Attack1.png',
+    framesMax: 6, 
+  }
+
+
 }
 })
 
@@ -59,10 +91,40 @@ velocity:{
 },
 color: 'blue'
 ,
-offSet:{
+offset:{
   x:-50,
   y:0
-}
+},
+
+imageSrc: './img/kenji/Idle.png',
+scale: 2.5,
+framesMax: 4,
+offset:{
+ x: 215,
+ y: 170
+  },
+    sprites:{
+    idle:{
+      imageSrc: './img/kenji/Idle.png',
+      framesMax: 4,
+    },
+    run:{
+      imageSrc: './img/kenji/Run.png',
+      framesMax: 8,   
+    },
+    jump:{
+      imageSrc: './img/kenji/Jump.png',
+      framesMax: 2,
+    },
+    fall:{
+      imageSrc: './img/kenji/Fall.png',
+      framesMax: 2,  
+    },
+    attack1:{
+      imageSrc: './img/kenji/Attack1.png',
+      framesMax: 4, 
+    }
+  }
 })
 
 
@@ -106,19 +168,44 @@ function animate(){
     enemy.velocity.x = 0
 
     // player movement
+
     if(keys.a.pressed && player.lastKey === 'a'){
         player.velocity.x = -5
+        player.switchSprites('run')
     } else if (keys.d.pressed && player.lastKey === 'd'){
         player.velocity.x = 5
+        player.switchSprites('run')
+    } else{
+    player.switchSprites('idle')
     }
 
-    
-    // enemy movement
-    if(keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft'){
-        enemy.velocity.x = -5
-    } else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight'){
-        enemy.velocity.x = 5
+
+    // jumping
+    if(player.velocity.y < 0){
+      player.switchSprites('jump')
+    }else if(player.velocity.y > 0){
+      player.switchSprites('fall')
     }
+
+
+
+    
+    // enemy movement  
+  if(keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft'){
+    enemy.velocity.x = -5
+    enemy.switchSprites('run')
+} else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight'){
+    enemy.velocity.x = 5
+    enemy.switchSprites('run')
+}else{
+  enemy.switchSprites('idle')
+  }
+
+  if(enemy.velocity.y < 0){
+    enemy.switchSprites('jump')
+  }else if(enemy.velocity.y > 0){
+    enemy.switchSprites('fall')
+  }
 
 
     //dectect collision
@@ -175,7 +262,7 @@ window.addEventListener('keydown', (event) => {
           player.lastKey = 'a'  
           break
         case'w':
-        if(player.position.y <= 330){
+        if(player.position.y <= 329){
           player.velocity.y = this.player.velocity.y
           } else{player.velocity.y = -20}
           break
@@ -194,7 +281,7 @@ window.addEventListener('keydown', (event) => {
           enemy.lastKey = 'ArrowLeft'  
           brea
         case'ArrowUp':  
-        if(enemy.position.y <= 330){
+        if(enemy.position.y <= 329){
           enemy.velocity.y = this.enemy.velocity.y
           } else{enemy.velocity.y = -20}
           break 
