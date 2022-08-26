@@ -27,6 +27,10 @@ https://deploy6jogoluta.netlify.app/
 ## 7º Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair.
 https://deploy7jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/186788677-a176b0cc-c565-42fc-b866-dd19f5f45085.png)
+## 8º adicionado colisao e acerto de dano para os dois jogadores.
+https://deploy8jogoluta.netlify.app/
+![image](https://user-images.githubusercontent.com/88566095/186806142-d4ddf069-381a-4da3-b252-c23354934265.png)
+
 
 
 
