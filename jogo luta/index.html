@@ -10,6 +10,11 @@
 
 
 <body> 
+    <style type="text/css">  
+        html{overflow-y:hidden; overflow-x:hidden;}
+    </style>
+
+
     <!--Red conteiner div-->
     <div style="position: relative;display: inline-block;">
         <!--smaller red container div-->
@@ -25,11 +30,11 @@
 
             <!--Player Health--> 
             <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
-                <div style="background-color:yellow; height: 30px; width: 100%;" ></div>
+                <div style="background-color:red; height: 30px; width: 100%;" ></div>
                 <div  id="playerHealth" 
                 style="
                  position: absolute;
-                 background: blue;
+                 background: rgb(0, 255, 13);
                  top: 0;
                  right: 0;
                  bottom: 0;
@@ -42,9 +47,9 @@
             <!--Timer-->
             <div 
              id="timer"
-             style="background-color: red;
+             style="background-color: gray;
                 width: 100px;
-                 height: 100px;
+                height: 100px;
                 flex-shrink: 0;
                 display: flex;
                 align-items: center;
@@ -57,11 +62,11 @@
 
             <!--Enemy Health-->
             <div style="position: relative; height: 30px; width: 100%;">
-                <div style="background-color:yellow; height: 30px;" ></div>
+                <div style="background-color:red; height: 30px;" ></div>
                 <div  id="enemyHealth" 
                 style="
                  position: absolute;
-                 background: blue;
+                 background: rgb(0, 255, 13);
                  top: 0;
                  right: 0;
                  bottom: 0;
@@ -91,7 +96,13 @@
         ">Empate</div>
         <canvas></canvas>
     </div>
+
+    <div>
+
+        <img src="./img/Controles.png">    
+    </div>
 <script src="./js/classes.js">   </script>
+<script src="./js/Rules.js">   </script>
 <script src="./js/utils.js">   </script>
 <script src="index.js">   </script>
 

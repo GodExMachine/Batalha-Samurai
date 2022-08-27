@@ -70,7 +70,8 @@ class Fighter extends Sprite {
     scale = 1,
     framesMax = 1,
     offset = {x: 0, y: 0},
-    sprites 
+    sprites,
+    attackBox = {offset:{}, width: undefined, height: undefined}
 
   }) {
 
@@ -87,14 +88,14 @@ class Fighter extends Sprite {
     this.width = 50
     this.height = 150
     this.lastKey
-    this.atackBox = {
+    this.attackBox = {
       position: {
         x: this.position.x,
         y: this.position.y
       },
-      offset: offset,
-      width: 100,
-      height: 50,
+      offset: attackBox.offset,
+      width: attackBox.width,
+      height: attackBox.height,
 
     }
     this.color = color
@@ -115,12 +116,16 @@ class Fighter extends Sprite {
 
 
   update() {
-    this.draw()
-    
+    this.draw() 
     this.animateFrames()
 
-    this.atackBox.position.x = this.position.x + this.atackBox.offset.x
-    this.atackBox.position.y = this.position.y
+    // atack boxes
+    this.attackBox.position.x = this.position.x + this.attackBox.offset.x
+    this.attackBox.position.y = this.position.y + this.attackBox.offset.y
+
+    
+    //desenha a attack box
+   // c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
 
     this.position.x += this.velocity.x
     this.position.y += this.velocity.y
@@ -135,20 +140,29 @@ class Fighter extends Sprite {
   attack() {
     this.switchSprites('attack1')
     this.isAttacking = true
-    setTimeout(() => {
-      this.isAttacking = false
-    }, 100)
+    
 
+  }
+
+  takeHit(){
+    this.switchSprites('takeHit')
   }
  
 
 
 switchSprites(sprite){
 
+  // oeverriding all other animations whit the atack animation
   if(this.image === this.sprites.attack1.image &&
      this.frameCurrent < this.sprites.attack1.framesMax - 1
      )
       return
+
+      // oeverriding all other animations whit the takeHit animation
+  if(this.image === this.sprites.takeHit.image &&
+    this.frameCurrent < this.sprites.takeHit.framesMax - 1
+    )
+     return
 
   switch (sprite){
     case 'idle':
@@ -183,6 +197,13 @@ switchSprites(sprite){
       if(this.image !== this.sprites.attack1.image){
       this.image = this.sprites.attack1.image
       this.framesMax =  this.sprites.attack1.framesMax
+      this.frameCurrent = 0
+      }
+    break;
+    case 'takeHit':
+      if(this.image !== this.sprites.takeHit.image){
+      this.image = this.sprites.takeHit.image
+      this.framesMax =  this.sprites.takeHit.framesMax
       this.frameCurrent = 0
       }
     break;
