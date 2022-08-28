@@ -208,7 +208,7 @@ function initAudioPlayer() {
 
 //esta funcao remove a guia de botoes
 function removeGuiaBotao(){
-  if(timer <= tempodojogo - 3){ 
+  if(timer <= tempodojogo - 2){ 
     document.querySelector('#controlesdisplay').src =' ' // REMOVE A GUIA DE BOTOES APOS 2 SEGUNDOS
     }
 

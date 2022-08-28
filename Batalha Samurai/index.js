@@ -178,6 +178,8 @@ function animate(){
     c.fillRect(0, 0, canvas.width, canvas.height)
     background.update()
     shop.update()
+    c.fillStyle = 'rgba(255, 255, 255, 0.15)'
+    c.fillRect(0, 0, canvas.width, canvas.height)
     player.update()
     enemy.update()
      
@@ -236,7 +238,10 @@ function animate(){
         enemy.takeHit()
         player.isAttacking = false
         enemy.health -= danoPlayer  // quanto o player tira de vida
-        document.querySelector('#enemyHealth').style.width = enemy.health +'%' 
+        //document.querySelector('#enemyHealth').style.width = enemy.health +'%' 
+        gsap.to('#enemyHealth',{
+          width: enemy.health +'%' 
+        })
       }
 
 
@@ -258,7 +263,10 @@ function animate(){
         player.takeHit()
         enemy.isAttacking = false
         player.health -= danoInimigo  // quanto o inimigo tira de vida
-        document.querySelector('#playerHealth').style.width = player.health +'%'
+        //document.querySelector('#playerHealth').style.width = player.health +'%'
+        gsap.to('#playerHealth',{
+          width: player.health +'%' 
+        })
       }
 
      //caso  o inimigo erre o ataque
