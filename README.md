@@ -8,7 +8,7 @@ https://deploy1jogoluta.netlify.app/
 https://deploy2jogoluta.netlify.app
 ![image](https://user-images.githubusercontent.com/88566095/185768574-6f629a9b-163c-46d0-8f84-30ae60a508b8.png)
 
-## 3. Adicionada a habilidade de atacar, criando a obrigatoriedade de que para pular seja presciso primeiro tocar o chao.
+## 3. Adicionada a habilidade de atacar, criado a obrigatoriedade de que para pular seja presciso primeiro tocar o chao.
 https://deploy3jogoluta.netlify.app/
 ![Sem título](https://user-images.githubusercontent.com/88566095/185822090-dcafeb2b-b088-4931-951e-ee2e597199d8.png)
 
