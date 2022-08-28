@@ -189,16 +189,24 @@ window.addEventListener('keyup', (event) => {
 })
 
 //tocar musica de fundo----
-var audio, playbtn;
-
+var timermusica = 0
+var audio
 function initAudioPlayer() {
-  audio = new Audio();
-  audio.src = "./sounds/battletheme5.wav";
-  audio.play();
-  audio.loop = true
+  if(timermusica > 0){
+    audio.pause()
+  }else{
+        audio = new Audio();
+        audio.src = "./sounds/battletheme5.wav";
+        audio.play();
+        audio.loop = true
+        timermusica += 1
+        
+        document.querySelector('#playmusica').innerHTML=("Stop")
+   }
+  
 }
 
-
+//esta funcao remove a guia de botoes
 function removeGuiaBotao(){
   if(timer <= 58){ 
     document.querySelector('#controlesdisplay').src =' ' // REMOVE A GUIA DE BOTOES APOS 2 SEGUNDOS
@@ -206,12 +214,7 @@ function removeGuiaBotao(){
 
 }
 
-mute.addEventListener('click', () => { 
-  audio.muted = !audio.muted;
-  
-})
-
-
+//esta funcao mostra a guia de botoes
 function guiabotoes(){
 document.querySelector('#controlesdisplay').src ='./img/Controles.png'
 }
