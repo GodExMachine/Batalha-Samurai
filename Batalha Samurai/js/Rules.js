@@ -15,7 +15,7 @@ const esquerdaplayer = 'a'
 const puloplayer = 'w'
 const attackplayer = 's'
 
-const churiquem = ' '
+const churiquem = 'c'
 
 
 
