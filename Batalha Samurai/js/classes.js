@@ -126,7 +126,7 @@ class Fighter extends Sprite {
 
     
     //desenha a attack box
-   // c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+    c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
 
     this.position.x += this.velocity.x
     this.position.y += this.velocity.y
@@ -138,18 +138,27 @@ class Fighter extends Sprite {
     } else this.velocity.y += gravity
   }
 
+
   attack() {
     this.switchSprites('attack1')
     this.isAttacking = true
-    
-
   }
+
+
+  attackshuriken(){ 
+    
+    this.switchSprites('attack3')
+    this.isAttacking = true
+    }
+
+
 
   takeHit(){
     this.switchSprites('takeHit')
+    sondeDano()
   }
  
-
+  
 
 switchSprites(sprite){
 
@@ -162,6 +171,12 @@ switchSprites(sprite){
     // sobrepoe a animação de ataque sobre as outras
     if(this.image === this.sprites.attack1.image &&
       this.frameCurrent < this.sprites.attack1.framesMax - 1
+    )
+     return
+
+    // sobrepoe a animação de ataque shuriken sobre as outras
+    if(this.image === this.sprites.attack3.image &&
+      this.frameCurrent < this.sprites.attack3.framesMax - 1
     )
      return
 
@@ -206,6 +221,13 @@ switchSprites(sprite){
       if(this.image !== this.sprites.attack1.image){
       this.image = this.sprites.attack1.image
       this.framesMax =  this.sprites.attack1.framesMax
+      this.frameCurrent = 0
+      }
+    break;
+    case 'attack3':
+      if(this.image !== this.sprites.attack3.image){
+      this.image = this.sprites.attack3.image
+      this.framesMax =  this.sprites.attack3.framesMax
       this.frameCurrent = 0
       }
     break;

@@ -107,18 +107,26 @@ window.addEventListener('keydown', (event) => {
           removeGuiaBotao()
           break
         case attackplayer:
+          player.attackBox.width = 165
           player.attack()
           removeGuiaBotao()
           break 
 
-          //churiquem
-        case churiquem:
+          //shuriken
+        case shuriken: 
+        if(bolsashuriken > 0){
+          player.attackBox.offset.x = 90
+          player.attackBox.width = 385
           keys.chu.pressed = true
           player.lastKey =  'chu'  
-          console.log('churiquem de fogoooooo!')
-          break
+          player.attackshuriken()
+          console.log('shuriken de fogoooooo!')
+          somshurikem()
+          bolsashuriken--
+          break}else{break}
     }
   }
+
 
   if(!enemy.dead){
   
@@ -162,11 +170,8 @@ window.addEventListener('keyup', (event) => {
       case puloplayer:
         keys.w.pressed = false
         break
-      //churiquem
-      case churiquem:
-        keys.chu.pressed = false
-        break
-
+   
+      
 
 
 
@@ -188,6 +193,7 @@ window.addEventListener('keyup', (event) => {
 
 })
 
+
 //tocar musica de fundo----
 var timermusica = 0
 var audio
@@ -206,6 +212,28 @@ function initAudioPlayer() {
   
 }
 
+//funcao faz os sons do ataque de shuriken
+var estrelaninja = document.querySelector('#sonshurikenID')
+function somshurikem(){
+  estrelaninja.play()
+}
+
+// funçao que faz o barulho de tomar dano
+var corte = document.querySelector('#sondedanoID')
+function sondeDano(){
+  corte.play()
+}
+
+
+
+
+
+
+//esta funcao mostra a guia de botoes
+function guiabotoes(){
+document.querySelector('#controlesdisplay').src ='./img/Controles.png'
+}
+
 //esta funcao remove a guia de botoes
 function removeGuiaBotao(){
   if(timer <= tempodojogo - 2){ 
@@ -213,9 +241,3 @@ function removeGuiaBotao(){
     }
 
 }
-
-//esta funcao mostra a guia de botoes
-function guiabotoes(){
-document.querySelector('#controlesdisplay').src ='./img/Controles.png'
-}
-

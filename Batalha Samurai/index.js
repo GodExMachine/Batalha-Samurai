@@ -74,6 +74,10 @@ offset:{
       imageSrc: './img/samuraiMack/Attack1.png',
       framesMax: 6, 
     },
+    attack3:{
+      imageSrc: './img/samuraiMack/Attack3.png',
+      framesMax: 6
+    },
     takeHit:{
       imageSrc: './img/samuraiMack/Take Hit2.png',
       framesMax: 4
@@ -85,7 +89,7 @@ offset:{
   },
   attackBox:{
     offset:{
-      x:100,
+      x:90,
       y:50
     },
     width: 165,
@@ -94,6 +98,7 @@ offset:{
 
 
 })
+
 
 
 
@@ -142,6 +147,10 @@ offset:{
       imageSrc: './img/kenji/Attack1.png',
       framesMax: 4, 
     },
+    attack3:{
+      imageSrc: ' ',/// futuro ataque especial
+      framesMax: 4, /// futuro ataque especial
+    },
     takeHit:{
       imageSrc: './img/kenji/Take hit2.png',
       framesMax: 3 
@@ -167,10 +176,9 @@ offset:{
 
 
 
-
-
-
 decreaseTimer()
+
+
 
 function animate(){
     window.requestAnimationFrame(animate)
@@ -282,6 +290,8 @@ function animate(){
     }
 
 
+    
+    
     
 
   
