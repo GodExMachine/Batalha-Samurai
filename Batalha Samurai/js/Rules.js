@@ -1,6 +1,6 @@
 
 
-const tempodojogo = 61
+const tempodojogo = 31
 
 
 //Caracteristicas do Player

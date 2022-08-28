@@ -196,7 +196,7 @@ function initAudioPlayer() {
     audio.pause()
   }else{
         audio = new Audio();
-        audio.src = "./sounds/battletheme5.wav";
+        audio.src = "./sounds/battletheme5.ogg";
         audio.play();
         audio.loop = true
         timermusica += 1
@@ -208,7 +208,7 @@ function initAudioPlayer() {
 
 //esta funcao remove a guia de botoes
 function removeGuiaBotao(){
-  if(timer <= 58){ 
+  if(timer <= tempodojogo - 3){ 
     document.querySelector('#controlesdisplay').src =' ' // REMOVE A GUIA DE BOTOES APOS 2 SEGUNDOS
     }
 

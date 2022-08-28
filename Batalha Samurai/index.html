@@ -3,8 +3,13 @@
     <style>
         *{
             box-sizing:border-box;
+            
         }
     </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 
@@ -47,8 +52,17 @@
         >
         
             <!--vida do player--> 
-            <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
-                <div style="background-color:red; height: 30px; width: 100%; padding: 5;" ></div>
+            <div style="position: relative;
+                width: 100%;
+                display: flex;
+                justify-content:
+                flex-end;
+                border-top: 4px solid grey;
+                border-bottom: 4px solid grey;
+                border-left: 4px solid grey;"
+                >
+
+                <div style="background-color:red; height: 30px; width: 100%; padding: 5" ></div>
                 <div  id="playerHealth" 
                 style="
                  position: absolute;
@@ -65,13 +79,15 @@
             <!--Timer-->
             <div 
              id="timer"
-             style="background-color: gray;
+             style="background-color: rgb(107, 45, 165);
                 width: 100px;
-                height: 100px;
+                height: 50px;
                 flex-shrink: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                font-family: 'Press Start 2P', cursive;
+                border: 4px solid grey;
 
              "
             >
@@ -79,7 +95,14 @@
             </div>
 
             <!--vida do inimigo-->
-            <div style="position: relative; height: 30px; width: 100%;">
+            <div style="
+                position: relative;  
+                width: 100%;
+                border-top: 4px solid grey;
+                border-bottom: 4px solid grey;
+                border-right: 4px solid grey;"
+                >
+
                 <div style="background-color:red; height: 30px;" ></div>
                 <div  id="enemyHealth" 
                 style="
@@ -90,6 +113,7 @@
                  bottom: 0;
                  left: 0;"
                 ></div>
+
 
             </div>
             <div></div>
@@ -118,7 +142,7 @@
     </div>
         <div style="display:flex; ">
             <div>
-                <audio id="somdefundo" src="./sounds/battletheme4.mp3"></audio>
+                <audio id="somdefundo" src="./sounds/battletheme5.ogg"></audio>
                 <audio id="efeitoataque" src="./sounds/macksword.ogg"></audio>   
             </div>
        
