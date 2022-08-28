@@ -93,22 +93,22 @@ window.addEventListener('keydown', (event) => {
         case direitaplayer: 
           keys.d.pressed = true
           player.lastKey = 'd' 
-          tocamusica()
+          removeGuiaBotao()
         break
         case'a':
           keys.a.pressed = true
           player.lastKey = 'a'  
-          tocamusica()
+          removeGuiaBotao()
           break
         case'w':
         if(player.position.y <= 329){
           player.velocity.y = this.player.velocity.y
           } else{player.velocity.y = AltPuloPlayer}  // quanto o jogador pula
-          tocamusica()
+          removeGuiaBotao()
           break
         case attackplayer:
           player.attack()
-          tocamusica()
+          removeGuiaBotao()
           break 
 
           //churiquem
@@ -127,22 +127,22 @@ window.addEventListener('keydown', (event) => {
         case'ArrowRight':
         keys.ArrowRight.pressed = true
           enemy.lastKey =  'ArrowRight'  
-          tocamusica()
+          removeGuiaBotao()
           break
         case'ArrowLeft':
           keys.ArrowLeft.pressed = true
           enemy.lastKey = 'ArrowLeft'  
-          tocamusica()
+          removeGuiaBotao()
           break
         case'ArrowUp':  
           if(enemy.position.y <= 129){
             enemy.velocity.y = this.enemy.velocity.y
             } else{enemy.velocity.y = AltPuloInimigo} //  quanto o inimigo pula
-          tocamusica()
+          removeGuiaBotao()
           break 
         case attackinimigo:
           enemy.attack()
-          tocamusica()
+          removeGuiaBotao()
           break 
       }
   }
@@ -199,21 +199,16 @@ function initAudioPlayer() {
 }
 
 
-function tocamusica(){
-  if(cliques <= 0){
-    initAudioPlayer()  // inicia o audio no primeiro movimento do jogador 
-  }
-  cliques++
-
+function removeGuiaBotao(){
   if(timer <= 58){ 
     document.querySelector('#controlesdisplay').src =' ' // REMOVE A GUIA DE BOTOES APOS 2 SEGUNDOS
     }
 
 }
 
-mute.addEventListener('click', (e) => {
+mute.addEventListener('click', () => { 
   audio.muted = !audio.muted;
-  e.target.textContent = audio.muted ? 'Mute' : 'Mute';
+  
 })
 
 
