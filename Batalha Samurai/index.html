@@ -1,0 +1,135 @@
+
+<head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+    </style>
+
+</head>
+
+
+<body > 
+
+    <!-- estilo do corpo-->
+    <style type="text/css">  
+        html{overflow-y:hidden; overflow-x:hidden;}
+    </style>
+    
+    <!-- div dos botoes-->
+    <div style="position: absolute;">
+        <button style="position: relative; display: inline-block; z-index:2;" type="button" id="mute">Mute</button>
+        <button style="position: relative; display: inline-block; z-index:2;" type="button" id="mostrabotoes" onclick="guiabotoes()">Controles</button><!--mostrar o guia de botoes-->
+        <button style="position: relative; display: inline-block; z-index:2;" type="button" id="undo2">teste</button><!--botao para teste-->
+     </div>
+
+            <!--div que contem a imagem que mostra os comandos-->
+        <div style="position: absolute; z-index:2; top: 40%; right: 55%;">
+             <img id="controlesdisplay" src="./img/Controles.png"> 
+        </div>
+    
+    <!--div que contem os mostradores de vida-->
+    <div style="position: relative;display: inline-block;">
+        
+        
+    
+
+        <!--smaller red container div-->
+        <div 
+         style="
+            position: absolute;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+         "
+        >
+        
+            <!--vida do player--> 
+            <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                <div style="background-color:red; height: 30px; width: 100%; padding: 5;" ></div>
+                <div  id="playerHealth" 
+                style="
+                 position: absolute;
+                 background: rgb(0, 255, 13);
+                 top: 0;
+                 right: 0;
+                 bottom: 0;
+                 width: 100%;"
+                ></div>
+
+            </div>
+
+
+            <!--Timer-->
+            <div 
+             id="timer"
+             style="background-color: gray;
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+             "
+            >
+              10
+            </div>
+
+            <!--vida do inimigo-->
+            <div style="position: relative; height: 30px; width: 100%;">
+                <div style="background-color:red; height: 30px;" ></div>
+                <div  id="enemyHealth" 
+                style="
+                 position: absolute;
+                 background: rgb(0, 255, 13);
+                 top: 0;
+                 right: 0;
+                 bottom: 0;
+                 left: 0;"
+                ></div>
+
+            </div>
+            <div></div>
+            
+        </div>
+
+
+        <div id="displayText"
+        style="
+        position: absolute;
+        color: white; 
+        display:flex;
+        align-items:
+        center;
+        justify-content:
+        center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        ">Empate</div>
+        
+        <canvas ></canvas>
+        
+    </div>
+        <div style="display:flex; ">
+            <div>
+                <audio id="somdefundo" src="./sounds/battletheme4.mp3"></audio>
+                <audio id="efeitoataque" src="./sounds/macksword.ogg"></audio>   
+            </div>
+       
+        </div>
+
+        
+
+
+
+<script src="./js/classes.js">   </script>
+<script src="./js/Rules.js">   </script>
+<script src="./js/utils.js">   </script>
+<script src="index.js">   </script>
+
+</body>
