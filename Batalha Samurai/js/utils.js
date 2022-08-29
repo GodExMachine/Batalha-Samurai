@@ -114,7 +114,7 @@ window.addEventListener('keydown', (event) => {
 
           //churiquem
         case churiquem:
-          if(bolsashuriken > 0 && timer < 41 ){
+          if(bolsashuriken > 0 && timer < 46 ){
           player.attackBox.offset.x = 90
           player.attackBox.width = 630
           keys.chu.pressed = true
