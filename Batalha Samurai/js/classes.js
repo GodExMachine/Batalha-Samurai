@@ -158,7 +158,7 @@ class Fighter extends Sprite {
     sondeDano()
   }
  
-  
+
 
 switchSprites(sprite){
 

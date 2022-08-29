@@ -89,7 +89,7 @@ offset:{
   },
   attackBox:{
     offset:{
-      x:90,
+      x:100,
       y:50
     },
     width: 165,
@@ -290,8 +290,6 @@ function animate(){
     }
 
 
-    
-    
     
 
   

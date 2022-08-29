@@ -112,21 +112,20 @@ window.addEventListener('keydown', (event) => {
           removeGuiaBotao()
           break 
 
-          //shuriken
-        case shuriken: 
-        if(bolsashuriken > 0){
+          //churiquem
+        case churiquem:
+          if(bolsashuriken > 0){
           player.attackBox.offset.x = 90
           player.attackBox.width = 385
           keys.chu.pressed = true
           player.lastKey =  'chu'  
           player.attackshuriken()
-          console.log('shuriken de fogoooooo!')
+          console.log('churiquem de fogoooooo!')
           somshurikem()
-          bolsashuriken--
-          break}else{break}
+          bolsashuriken--}
+          break
     }
   }
-
 
   if(!enemy.dead){
   

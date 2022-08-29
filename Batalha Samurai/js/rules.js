@@ -1,6 +1,6 @@
 
 
-const tempodojogo = 31
+const tempodojogo = 51
 
 
 //Caracteristicas do Player
@@ -15,9 +15,8 @@ const esquerdaplayer = 'a'
 const puloplayer = 'w'
 const attackplayer = 's'
 
-const shuriken = 'c'
-bolsashuriken = 3
-
+const churiquem = 'c'
+var bolsashuriken = 3
 
 
 
