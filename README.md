@@ -6,7 +6,6 @@ https://deploy1jogoluta.netlify.app/
 
 ## 2. Criando os keylisteners para movimentação dos personagens, adicionado habilidade de movimentação e pulo, ajustada a posição inicial dos personagens.
 https://deploy2jogoluta.netlify.app
-![image](https://user-images.githubusercontent.com/88566095/185768574-6f629a9b-163c-46d0-8f84-30ae60a508b8.png)
 
 ## 3. Adicionada a habilidade de atacar, criado a obrigatoriedade de que para pular seja presciso primeiro tocar o chao.
 https://deploy3jogoluta.netlify.app/
