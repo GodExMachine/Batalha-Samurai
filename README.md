@@ -26,12 +26,10 @@ https://deploy6jogoluta.netlify.app/
 
 ## 7. Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair.
 https://deploy7jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/186788677-a176b0cc-c565-42fc-b866-dd19f5f45085.png)
 ## 8. Adicionado colisao e acerto de dano para os dois jogadores.
 https://deploy8jogoluta.netlify.app/
 ## 9. Mudanças no codigo e refatoração em funçoes.
 https://deploy9jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/186806142-d4ddf069-381a-4da3-b252-c23354934265.png)
 ## 10. Adicionado guia mostrando os controles, adicionado botao para mostrar os controles, criada animação para morte, adiconado botao para tocar a musica de fundo.
 https://deploy10jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/187088729-9f5d62e5-4e79-4748-8c60-2dc4b539053d.png)
