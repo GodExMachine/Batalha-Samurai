@@ -32,7 +32,7 @@ https://deploy8jogoluta.netlify.app/
 https://deploy9jogoluta.netlify.app/
 ## 10. Adicionado guia mostrando os controles, adicionado botao para mostrar os controles, criada animação para morte, adiconado botao para tocar a musica de fundo.
 https://deploy10jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/187088729-9f5d62e5-4e79-4748-8c60-2dc4b539053d.png)
+![image](https://user-images.githubusercontent.com/88566095/187101531-55b13aa8-4bc1-4a21-b137-b85b170730e7.png)
 
 
 
