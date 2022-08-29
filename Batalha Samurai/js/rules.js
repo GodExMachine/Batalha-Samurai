@@ -16,7 +16,7 @@ const puloplayer = 'w'
 const attackplayer = 's'
 
 const churiquem = 'c'
-var bolsashuriken = 3
+var bolsashuriken = 4
 
 
 
