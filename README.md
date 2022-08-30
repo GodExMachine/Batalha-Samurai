@@ -28,7 +28,9 @@ https://deploy5jogoluta.netlify.app/
 
 ### 6. Adcionadas as sprites do jogador para ficar parado, andar, atacar, pular e cair.
 https://deploy6jogoluta.netlify.app/
-![samurai](https://user-images.githubusercontent.com/88566095/186308553-7c1d8407-18a0-4250-9fc1-5faca89b6906.png)
+
+![186308553-7c1d8407-18a0-4250-9fc1-5faca89b6906](https://user-images.githubusercontent.com/88566095/187564057-aa96a1c2-0f28-4589-afd3-846d3b10fc7b.png)
+
 
 ### 7. Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair.
 https://deploy7jogoluta.netlify.app/
