@@ -16,7 +16,9 @@ https://deploy3jogoluta.netlify.app/
 
 ### 4. Adicionado barras de vida funcionais.
 https://deploy4jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/186041512-7db4a0a8-7af4-4f02-ac87-b236b2da1fed.png)
+
+![186041512-7db4a0a8-7af4-4f02-ac87-b236b2da1fed](https://user-images.githubusercontent.com/88566095/187563913-c37295f5-3ae2-4c40-a267-5edb0c7d52c3.png)
+
 
 ### 5. Criada a animação para loja na imagen ao fundo.
 https://deploy5jogoluta.netlify.app/
