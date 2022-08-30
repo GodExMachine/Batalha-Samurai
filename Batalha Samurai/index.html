@@ -1,12 +1,16 @@
+<html lang="pt-BR">
+
+ 
 
 <head>
-    <style>
-        *{
-            box-sizing:border-box;
-            
-        }
-    </style>
     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Samurai</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -14,15 +18,12 @@
 </head>
 
 
-<body > 
-
-    <!-- estilo do corpo-->
-    <style type="text/css">  
-        html{overflow-y:hidden; overflow-x:hidden;}
-    </style>
+<body >
+    
+    
     
     <!-- div dos botoes-->
-    <div style="position: absolute;">
+    <div class="botoes">
         <button style="position: relative; display: inline-block; z-index:2;" type="button" id="playmusica" onclick="initAudioPlayer() ">Play</button><!--botao para teste-->
         <button style="position: relative; display: inline-block; z-index:2;" type="button" id="mostrabotoes" onclick="guiabotoes()">Controles</button><!--mostrar o guia de botoes-->
         <button style="position: relative; display: inline-block; z-index:2;" type="button" id="mute" onclick="trocafundo()">Background</button>
@@ -138,21 +139,15 @@
         font-family: 'Press Start 2P', cursive;
         ">Empate</div>
         
-        <canvas ></canvas>
-        
+        <canvas ></canvas>  
     </div>
-        <div>
-            <div>
-                <audio id="somdefundo" src="./sounds/battletheme5.ogg"></audio>
-                <audio id="sonshurikenID" src="./sounds/shuriken.ogg"></audio>  
-                <audio id="sondedanoID" src="./sounds/hit16.mp3.flac"></audio>    
-            </div>
-       
-        </div>
 
-        
+    <audio id="somdefundo" src="./sounds/battletheme5.ogg" type="audio/ogg"></audio>
+    <audio id="sonshurikenID" src="./sounds/shuriken.ogg" type="audio/ogg"></audio>  
+    <audio id="sondedanoID" src="./sounds/hit16.mp3.flac"></audio>    
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 <script src="./js/classes.js">   </script>
 <script src="./js/Rules.js">   </script>
@@ -161,3 +156,6 @@
 <script src="index.js">   </script>
 
 </body>
+
+
+</html>

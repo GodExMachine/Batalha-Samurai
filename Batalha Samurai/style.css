@@ -1,0 +1,14 @@
+*{
+    box-sizing:border-box;  
+}
+
+
+html{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+
+.botoes{
+    position: absolute;
+}

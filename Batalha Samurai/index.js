@@ -49,7 +49,10 @@ function fundoescolhido(){
   }else
   if(numbackground === 3){
     background3.update()
-  }else{background1.update()}
+  }else{
+    background1.update()
+    shop.update() //desenha a lojinha
+  }
 }
 
 
@@ -219,7 +222,6 @@ function animate(){
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     fundoescolhido()  // aqui  chamamos a função que puxa o fundo escolhido dentro do canvas 
-    shop.update()
     c.fillStyle = 'rgba(255, 255, 255, 0.15)'
     c.fillRect(0, 0, canvas.width, canvas.height)
     player.update()
