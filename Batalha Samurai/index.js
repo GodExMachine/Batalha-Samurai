@@ -10,15 +10,52 @@ c.fillRect(0, 0, canvas.width, canvas.height)
 
 const gravity = 0.7
 
-const background = new Sprite({
-position:{
-  x: 0,
-  y: 0
-},
-imageSrc: './img/background.png'
 
+/// imagens de fundo disponiveis
+var background1 = new Sprite({
+position:{
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background1.png'
 })
 
+var background2 = new Sprite({
+  position:{
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background2.png'
+})
+
+var background3 = new Sprite({
+  position:{
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background3.png'
+})
+  
+//esta função muda o numero para a proxima função trocar o fundo
+var numbackground = 1
+function trocafundo(){
+  numbackground++
+}
+
+///esta função muda a imagen de fundo
+function fundoescolhido(){
+  if(numbackground === 2){
+    background2.update()
+  }else
+  if(numbackground === 3){
+    background3.update()
+  }else{background1.update()}
+}
+
+
+
+
+//imagem da lojinha
 const shop = new Sprite({
   position:{
     x: 640,
@@ -29,7 +66,7 @@ const shop = new Sprite({
   framesMax: 6
   
   
-  })
+})
 
 
 //jogador
@@ -181,7 +218,7 @@ function animate(){
     window.requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
-    background.update()
+    fundoescolhido()  // aqui  chamamos a função que puxa o fundo escolhido dentro do canvas 
     shop.update()
     c.fillStyle = 'rgba(255, 255, 255, 0.15)'
     c.fillRect(0, 0, canvas.width, canvas.height)
@@ -190,6 +227,14 @@ function animate(){
      
     player.velocity.x = 0
     enemy.velocity.x = 0
+
+
+
+    
+
+
+
+
 
 
     //movimentação do Player

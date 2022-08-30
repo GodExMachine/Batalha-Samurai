@@ -120,6 +120,10 @@ class Fighter extends Sprite {
     this.draw() 
     if(!this.dead) this.animateFrames()
 
+
+
+    
+
     // atack boxes
     this.attackBox.position.x = this.position.x + this.attackBox.offset.x
     this.attackBox.position.y = this.position.y + this.attackBox.offset.y
@@ -247,7 +251,7 @@ switchSprites(sprite){
       this.framesMax =  this.sprites.death.framesMax
       this.frameCurrent = 0
       }
-    break;
+    
   }
 }
 }

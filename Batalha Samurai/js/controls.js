@@ -65,6 +65,13 @@ const keys = {
           case churiquem:
             P1especial()
             break
+            
+              
+
+
+
+
+
       }
     }
   
@@ -91,6 +98,7 @@ const keys = {
           case superpower:
             P2especial()   
             break 
+            
         }
     }
   })
