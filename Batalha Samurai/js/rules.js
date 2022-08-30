@@ -31,3 +31,6 @@ const direitainimigo = 'ArrowRight'
 const esquerdainimigo = 'ArrowLeft'
 const puloinimigo = 'ArrowUp'
 const attackinimigo = 'ArrowDown'
+
+const superpower = ';'
+var bolsasuperpower = 3

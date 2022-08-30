@@ -173,9 +173,6 @@ offset:{
 
 
 
-
-
-
 decreaseTimer()
 
 
@@ -193,6 +190,7 @@ function animate(){
      
     player.velocity.x = 0
     enemy.velocity.x = 0
+
 
     //movimentação do Player
     if(keys.a.pressed && player.lastKey === 'a'){
@@ -243,6 +241,7 @@ function animate(){
       }) &&
       player.isAttacking && player.frameCurrent ===  4
     )  {
+        enemy.velocity.x += 100
         enemy.takeHit()
         player.isAttacking = false
         enemy.health -= danoPlayer  // quanto o player tira de vida
@@ -260,6 +259,10 @@ function animate(){
 
 
 
+
+
+
+    
     //caso o inimigo acerte
     if(
       rectangularCollision({
@@ -268,6 +271,7 @@ function animate(){
       }) &&
       enemy.isAttacking && enemy.frameCurrent === 2
     )  {
+        player.velocity.x -= 100
         player.takeHit()
         enemy.isAttacking = false
         player.health -= danoInimigo  // quanto o inimigo tira de vida
@@ -277,10 +281,19 @@ function animate(){
         })
       }
 
+
+
+
      //caso  o inimigo erre o ataque
      if( enemy.isAttacking && enemy.frameCurrent === 2 ){
       enemy.isAttacking = false 
      }
+
+
+
+
+
+
 
     //termina o jogo quando a vida chegar a 0
 

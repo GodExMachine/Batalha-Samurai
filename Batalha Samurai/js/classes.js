@@ -139,6 +139,7 @@ class Fighter extends Sprite {
   }
 
 
+
   attack() {
     this.switchSprites('attack1')
     this.isAttacking = true
@@ -146,16 +147,15 @@ class Fighter extends Sprite {
 
 
   attackshuriken(){ 
-    
     this.switchSprites('attack3')
     this.isAttacking = true
-    }
-
+  }
 
 
   takeHit(){
     this.switchSprites('takeHit')
     sondeDano()
+    
   }
  
 
@@ -187,7 +187,9 @@ switchSprites(sprite){
      return
 
 
-     
+  
+  /////////troca sprites////////
+  
   switch (sprite){
     case 'idle':
       if(this.image !== this.sprites.idle.image){

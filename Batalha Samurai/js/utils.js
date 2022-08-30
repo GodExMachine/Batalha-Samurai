@@ -30,6 +30,10 @@ function determineWinner ({player, enemy, timerId}){
       document.querySelector('#timer').innerHTML = timer
     }
 
+     if(timer === 25){
+      bolsashuriken = bolsashuriken + 2
+      bolsasuperpower = bolsasuperpower + 2
+     }
   
       if(timer === 0){
         
@@ -37,8 +41,6 @@ function determineWinner ({player, enemy, timerId}){
      
   
       }
-
-
 
   }
   
@@ -55,142 +57,6 @@ function determineWinner ({player, enemy, timerId}){
   }
   
 
-
-
-
-//leitura dos controles
-
-const keys = {
-  a:{
-      pressed: false
-  },
-  d:{
-      pressed: false
-  },
-  ArrowRight:{
-      pressed: false
-  },
-  ArrowLeft:{
-      pressed: false
-  },
-  chu:{
-    pressed: false
-}
-
-
-}
-
-
-//ao precionar o botão -->
-var cliques = 0
-window.addEventListener('keydown', (event) => {
-    
-  if(!player.dead){
-  
-    switch(event.key){
-    
-        //player keys
-        case direitaplayer: 
-          keys.d.pressed = true
-          player.lastKey = 'd' 
-          removeGuiaBotao()
-        break
-        case'a':
-          keys.a.pressed = true
-          player.lastKey = 'a'  
-          removeGuiaBotao()
-          break
-        case'w':
-        if(player.position.y <= 329){
-          player.velocity.y = this.player.velocity.y
-          } else{player.velocity.y = AltPuloPlayer}  // quanto o jogador pula
-          removeGuiaBotao()
-          break
-        case attackplayer:
-          player.attackBox.width = 165
-          player.attack()
-          removeGuiaBotao()
-          break 
-
-          //churiquem
-        case churiquem:
-          if(bolsashuriken > 0 && timer < 46 ){
-          player.attackBox.offset.x = 90
-          player.attackBox.width = 630
-          keys.chu.pressed = true
-          player.lastKey =  'chu'  
-          player.attackshuriken()
-          console.log('churiquem de fogoooooo!')
-          somshurikem()
-          bolsashuriken--}
-          break
-    }
-  }
-
-  if(!enemy.dead){
-  
-      switch(event.key){
-        //enemy keys
-        case'ArrowRight':
-        keys.ArrowRight.pressed = true
-          enemy.lastKey =  'ArrowRight'  
-          removeGuiaBotao()
-          break
-        case'ArrowLeft':
-          keys.ArrowLeft.pressed = true
-          enemy.lastKey = 'ArrowLeft'  
-          removeGuiaBotao()
-          break
-        case'ArrowUp':  
-          if(enemy.position.y <= 129){
-            enemy.velocity.y = this.enemy.velocity.y
-            } else{enemy.velocity.y = AltPuloInimigo} //  quanto o inimigo pula
-          removeGuiaBotao()
-          break 
-        case attackinimigo:
-          enemy.attack()
-          removeGuiaBotao()
-          break 
-      }
-  }
-})
-
-//ao soltar o botão -->
-window.addEventListener('keyup', (event) => {
-  switch(event.key){
-
-      //player keys
-        case direitaplayer:
-       keys.d.pressed = false
-        break
-      case esquerdaplayer:
-        keys.a.pressed = false
-        break
-      case puloplayer:
-        keys.w.pressed = false
-        break
-   
-      
-
-
-
-
-      //enemy keys
-        case direitainimigo:
-       keys.ArrowRight.pressed = false
-        break
-      case esquerdainimigo:
-        keys.ArrowLeft.pressed = false
-        break
-      case puloinimigo:
-        keys.ArrowUp.pressed = false
-        break
-
-      
-
-  }
-
-})
 
 
 //tocar musica de fundo----
@@ -213,24 +79,22 @@ function initAudioPlayer() {
 
 //funcao faz os sons do ataque de shuriken
 var estrelaninja = document.querySelector('#sonshurikenID')
+
 function somshurikem(){
   estrelaninja.play()
 }
 
 // funçao que faz o barulho de tomar dano
 var corte = document.querySelector('#sondedanoID')
+
 function sondeDano(){
   corte.play()
 }
 
 
-
-
-
-
 //esta funcao mostra a guia de botoes
 function guiabotoes(){
-document.querySelector('#controlesdisplay').src ='./img/Controles.png'
+  document.querySelector('#controlesdisplay').src ='./img/Controles.png'
 }
 
 //esta funcao remove a guia de botoes
