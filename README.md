@@ -22,7 +22,9 @@ https://deploy4jogoluta.netlify.app/
 
 ### 5. Criada a animação para loja na imagen ao fundo.
 https://deploy5jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/186070024-f2670b5b-304d-4bac-91f1-8eea21fa2d50.png)
+
+![186070024-f2670b5b-304d-4bac-91f1-8eea21fa2d50](https://user-images.githubusercontent.com/88566095/187563973-93fc0fe4-3d5f-4197-9584-fbf84caa9b7c.png)
+
 
 ### 6. Adcionadas as sprites do jogador para ficar parado, andar, atacar, pular e cair.
 https://deploy6jogoluta.netlify.app/
