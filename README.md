@@ -30,6 +30,10 @@ https://deploy8jogoluta.netlify.app/
 ## 9. Mudanças no codigo e refatoração em funçoes.
 https://deploy9jogoluta.netlify.app/
 ## 10. Adicionado guia mostrando os controles, adicionado botao para mostrar os controles, criada animação para morte, adiconado botao para tocar a musica de fundo.
+
+## 11. Adicionando a posibilidade de trocar a imagem de fundo clicando no botao "Background"
+
+# 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 https://deploy10jogoluta.netlify.app/
 ![image](https://user-images.githubusercontent.com/88566095/187101531-55b13aa8-4bc1-4a21-b137-b85b170730e7.png)
 
