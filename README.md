@@ -10,6 +10,7 @@ https://deploy2jogoluta.netlify.app
 
 ### 3. Adicionada a habilidade de atacar, criado a obrigatoriedade de que para pular seja presciso primeiro tocar o chao.
 https://deploy3jogoluta.netlify.app/
+
 ![185822090-dcafeb2b-b088-4931-951e-ee2e597199d8](https://user-images.githubusercontent.com/88566095/187563805-07181437-288a-4532-a7fd-1bf8093c51fd.png)
 
 
