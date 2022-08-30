@@ -2,6 +2,7 @@
 
 ### 1. Foi criando o canvas e inserido as propriedades de velocidade, posição e gravidade.
 https://deploy1jogoluta.netlify.app/
+
 ![185760352-4a13aff2-1f7c-422c-9cae-6a10f6dffca1](https://user-images.githubusercontent.com/88566095/187563661-ec921730-3481-46ae-8ae4-06996a6b1db8.png)
 
 ### 2. Criando os keylisteners para movimentação dos personagens, adicionado habilidade de movimentação e pulo, ajustada a posição inicial dos personagens.
