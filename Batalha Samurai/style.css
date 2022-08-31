@@ -11,6 +11,7 @@ html{
 /*div dos botoes*/
 .botoes{
     position: absolute;
+    z-index: 3;
 }
 
 /*div que contem a guia de comandos */
