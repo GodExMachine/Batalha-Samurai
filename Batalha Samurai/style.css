@@ -9,6 +9,9 @@ html{
     overflow-x:hidden;
 }
 
+canvas{
+    width:100%; 
+}
 /*div dos botoes*/
 .botoes{
     position: absolute;
