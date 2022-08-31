@@ -44,7 +44,10 @@ https://deploy9jogoluta.netlify.app/
 
 ### 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 https://deploy10jogoluta.netlify.app/
-![image](https://user-images.githubusercontent.com/88566095/187101531-55b13aa8-4bc1-4a21-b137-b85b170730e7.png)
+
+![Capturar](https://user-images.githubusercontent.com/88566095/187564349-83ca81ad-a32a-4dbc-b3ca-1669b8e1f360.PNG)
+
+
 
 
 
