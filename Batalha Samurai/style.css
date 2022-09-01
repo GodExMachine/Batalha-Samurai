@@ -129,3 +129,72 @@ canvas{
     display: none;
     font-family: 'Press Start 2P', cursive;
  }
+
+
+
+/*div que engloba todos os elementos de controle*/
+.controlesmobile{
+    margin-top: 20%;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    align-items:center;
+    justify-content:center;
+
+}
+
+ /*controles de movimento*/
+ .controlesmovimentop1{  
+    display:inline-block;  
+ }
+
+ /*controles de ataque*/
+.controlesataquep1{
+    display:inline-block;
+    margin-left: 40%;
+}
+
+/*estilos dos botoes de ataque*/
+ .botoesmobile{
+    width: 112;
+    height: 112;
+    border-left: 30px;
+    border-radius: 20%;
+    margin-top: 80px;
+    display: block;
+    
+ }
+
+ /*botoes do controle de movimento*/
+ .botoesmobileMov{
+    width: 112;
+    height: 112;
+    border-left: 30px;
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flexbox;
+
+ }
+
+/*botao de pulo*/
+ .botoesmobilePulo{
+    width: 112;
+    height: 112;
+    border-left: 130px;
+    border-radius: 20%;
+    margin-top: 30px;
+    margin-left: 100px;
+    display: block;
+
+    
+ }
+
+
+ .menu{
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+
+ }

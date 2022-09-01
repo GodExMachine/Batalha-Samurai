@@ -161,7 +161,12 @@ const keys = {
     keys.d.pressed = true
     player.lastKey = 'd' 
     removeGuiaBotao()
+
   }
+
+
+
+
 
   //funçao que move o player para esquerda
   function P1esquerda(){
@@ -199,6 +204,9 @@ const keys = {
         bolsashuriken--
     }
   }
+
+
+
 
   
   ///funçoes do player 2---------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
