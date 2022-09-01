@@ -98,8 +98,12 @@ offset:{
       imageSrc: './img/samuraiMack/Idle.png',
       framesMax: 8,
     },
-    run:{
-      imageSrc: './img/samuraiMack/Run.png',
+    runLeft:{
+      imageSrc: './img/samuraiMack/RunLeft.png',
+      framesMax: 8,   
+    },
+    runRight:{
+      imageSrc: './img/samuraiMack/RunRight.png',
       framesMax: 8,   
     },
     jump:{
@@ -171,9 +175,15 @@ offset:{
       imageSrc: './img/kenji/Idle.png',
       framesMax: 4,
     },
-    run:{
-      imageSrc: './img/kenji/Run.png',
-      framesMax: 8,   
+    runLeft:{
+      imageSrc: './img/kenji/RunLeft.png',
+      framesMax: 8,  
+       
+    },
+    runRight:{
+      imageSrc: './img/kenji/RunRight.png',
+      framesMax: 8,  
+       
     },
     jump:{
       imageSrc: './img/kenji/Jump.png',
@@ -242,10 +252,10 @@ function animate(){
     //movimentação do Player
     if(keys.a.pressed && player.lastKey === 'a'){
         player.velocity.x = VelEsquerdaPlayer   // quanto o player se movimenta
-        player.switchSprites('run')
+        player.switchSprites('runLeft')
     } else if (keys.d.pressed && player.lastKey === 'd'){
         player.velocity.x = VelDireitaPlayer // quanto o player se movimenta
-        player.switchSprites('run')
+        player.switchSprites('runRight')
     } else{
     player.switchSprites('idle')
     }
@@ -264,10 +274,10 @@ function animate(){
   //movimentação do inimigo 
   if(keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft'){
     enemy.velocity.x = VelEsquerdaInimigo   // quanto o inimigo se movimenta
-    enemy.switchSprites('run')
+    enemy.switchSprites('runLeft')
   } else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight'){
      enemy.velocity.x = VelDireitaInimigo // quanto o inimigo se movimenta
-     enemy.switchSprites('run')
+     enemy.switchSprites('runRight')
     } else{
        enemy.switchSprites('idle')
       }

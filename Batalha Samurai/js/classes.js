@@ -59,6 +59,7 @@ class Sprite {
 }
 
 
+
 // desenha os lutadores
 
 class Fighter extends Sprite {
@@ -130,7 +131,8 @@ class Fighter extends Sprite {
 
     ///--------------------->>>>>>
     //desenha a attack box
-    //c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+     //c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+    
 
     this.position.x += this.velocity.x
     this.position.y += this.velocity.y
@@ -161,6 +163,7 @@ class Fighter extends Sprite {
     sondeDano()
     
   }
+ 
  
 
 
@@ -202,10 +205,17 @@ switchSprites(sprite){
       this.frameCurrent = 0
     }
       break;
-    case 'run':
-      if(this.image !== this.sprites.run.image){
-      this.image =  this.sprites.run.image 
-      this.framesMax =  this.sprites.run.framesMax
+    case 'runLeft':
+      if(this.image !== this.sprites.runLeft.image){
+      this.image =  this.sprites.runLeft.image 
+      this.framesMax =  this.sprites.runLeft.framesMax
+      this.frameCurrent = 0
+    }
+    break;
+    case 'runRight':
+      if(this.image !== this.sprites.runRight.image){
+      this.image =  this.sprites.runRight.image 
+      this.framesMax =  this.sprites.runRight.framesMax
       this.frameCurrent = 0
     }
     break;
@@ -255,3 +265,4 @@ switchSprites(sprite){
   }
 }
 }
+
