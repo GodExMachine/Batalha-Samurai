@@ -34,16 +34,23 @@ https://deploy6jogoluta.netlify.app/
 
 ### 7. Adicionado as sprites do jogador 2 para ficar parado, andar, atacar, pular e cair.
 https://deploy7jogoluta.netlify.app/
+
 ### 8. Adicionado colisao e acerto de dano para os dois jogadores.
 https://deploy8jogoluta.netlify.app/
+
 ### 9. Mudanças no codigo e refatoração em funçoes.
 https://deploy9jogoluta.netlify.app/
+
 ### 10. Adicionado guia mostrando os controles, adicionado botao para mostrar os controles, criada animação para morte, adiconado botao para tocar a musica de fundo.
 
 ### 11. Adicionando a posibilidade de trocar a imagem de fundo clicando no botao "Background"
 
-### 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
+### 12. O index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 https://deploy10jogoluta.netlify.app/
+
+### 13. Adiconado botoes para quem acessar via dispositiveis mobile poder testar controlar um dos jogadores.
+https://batalha-samurai.netlify.app/
+
 
 ![Capturar](https://user-images.githubusercontent.com/88566095/187564349-83ca81ad-a32a-4dbc-b3ca-1669b8e1f360.PNG)
 
