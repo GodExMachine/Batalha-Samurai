@@ -104,3 +104,8 @@ function removeGuiaBotao(){
     }
 
 }
+
+// funcao que recarega a pagina
+function refresh(){
+  location.reload();
+}
