@@ -45,12 +45,11 @@ https://deploy9jogoluta.netlify.app/
 
 ### 11. Adicionando a posibilidade de trocar a imagem de fundo clicando no botao "Background"
 
-### 12. O index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
+### 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 https://deploy10jogoluta.netlify.app/
 
 ### 13. Adiconado botoes para quem acessar via dispositiveis mobile poder testar controlar um dos jogadores.
 https://batalha-samurai.netlify.app/
-
 
 ![Capturar](https://user-images.githubusercontent.com/88566095/187564349-83ca81ad-a32a-4dbc-b3ca-1669b8e1f360.PNG)
 
