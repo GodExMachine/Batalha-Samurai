@@ -74,17 +74,11 @@ const shop = new Sprite({
 
 
 
-function troca1(){
-  player = kenji1
- 
- }
-
 //jogador
-var player = mack
+var player = undefined
 
 // inimigo
-var enemy = kenji
-
+var enemy = undefined
 
 
 
@@ -92,9 +86,10 @@ var enemy = kenji
 decreaseTimer()
 
 
-
-function animate(){
-    window.requestAnimationFrame(animate)
+function animate(){  
+  window.requestAnimationFrame(animate)
+  
+  
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     fundoescolhido()  // aqui  chamamos a função que puxa o fundo escolhido dentro do canvas 
@@ -105,12 +100,6 @@ function animate(){
      
     player.velocity.x = 0
     enemy.velocity.x = 0
-
-
-
-    
-
-
 
 
 
@@ -162,7 +151,7 @@ function animate(){
         rectangle1: player,
         rectangle2: enemy
       }) &&
-      player.isAttacking && player.frameCurrent ===  4
+      player.isAttacking && player.frameCurrent ===  framecolisaop1
     )  {
         enemy.velocity.x += 100
         enemy.takeHit()
@@ -192,9 +181,9 @@ function animate(){
         rectangle1: enemy,
         rectangle2: player
       }) &&
-      enemy.isAttacking && enemy.frameCurrent === 2
+      enemy.isAttacking && enemy.frameCurrent === framecolisaop2
     )  {
-        player.velocity.x -= 100
+        player.velocity.x -= 100  // aqui faz o jogador ir pra esquerda ou direita se acertado.
         player.takeHit()
         enemy.isAttacking = false
         player.health -= danoInimigo  // quanto o inimigo tira de vida
@@ -203,8 +192,6 @@ function animate(){
           width: player.health +'%' 
         })
       }
-
-
 
 
      //caso  o inimigo erre o ataque

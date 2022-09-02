@@ -1,11 +1,11 @@
 
 
-const tempodojogo = 51
+const tempodojogo = 25
 
 
 //Caracteristicas do Player
 const danoPlayer = 25
-const VelEsquerdaPlayer = -8
+const VelEsquerdaPlayer = -5
 const VelDireitaPlayer = 5
 const AltPuloPlayer = -25
 
@@ -16,14 +16,14 @@ const puloplayer = 'w'
 const attackplayer = 's'
 
 const churiquem = 'c'
-var bolsashuriken = 3
+var bolsashuriken = 40
 
 
 
 //Caracteristicas do inimigo
 const danoInimigo = 20
-const VelEsquerdaInimigo = -7
-const VelDireitaInimigo = 4
+const VelEsquerdaInimigo = -5
+const VelDireitaInimigo = 5
 const AltPuloInimigo = -15
 
 //controles Inimigo
@@ -33,4 +33,4 @@ const puloinimigo = 'ArrowUp'
 const attackinimigo = 'ArrowDown'
 
 const superpower = ';'
-var bolsasuperpower = 3
+var bolsasuperpower = 40

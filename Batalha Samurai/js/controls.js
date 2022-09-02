@@ -186,7 +186,6 @@ const keys = {
   //funçao de ataque do jogador
   function P1attack(){
     keys.attackplayer.pressed =  true
-    player.lastKey =  attackplayer
     player.attackBox.width = 165
     player.attack()
     removeGuiaBotao()
@@ -239,6 +238,8 @@ const keys = {
   //função de ataque do player 2
   function P2attack(){
     keys.attackinimigo.pressed = true
+    enemy.attackBox.width = 165
+    enemy.attackBox.offset.x = -165
     enemy.attack()
     removeGuiaBotao()
   }
@@ -246,9 +247,15 @@ const keys = {
   //função de ataque especial do player 2
   function P2especial(){
     if(bolsasuperpower > 0 && timer < 46 ){
+        enemy.attackBox.offset.x = -90
+        enemy.attackBox.width = -630
         keys.superpower.pressed = true
+        enemy.attackspear()
         console.log('shuriken das sombras')
         bolsasuperpower--
+        somshurikem()
     }
     
   }
+
+

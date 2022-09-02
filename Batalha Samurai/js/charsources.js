@@ -1,3 +1,6 @@
+var framecolisaop1 = undefined
+var framecolisaop2 = undefined
+
 
 // personagem mack para o player 1
 const mack =  new Fighter({
@@ -13,7 +16,7 @@ offset:{
   x:0,
   y:0
 },
- imageSrc: './img/samuraiMack/Idle.png',
+ imageSrc: './img/samuraiMack/Idleright.png',
  scale: 2.5,
  framesMax: 8,
  offset:{
@@ -22,7 +25,7 @@ offset:{
 },
   sprites:{
     idle:{
-      imageSrc: './img/samuraiMack/Idle.png',
+      imageSrc: './img/samuraiMack/Idleright.png',
       framesMax: 8,
     },
     runLeft:{
@@ -34,27 +37,27 @@ offset:{
       framesMax: 8,   
     },
     jump:{
-      imageSrc: './img/samuraiMack/Jump.png',
+      imageSrc: './img/samuraiMack/Jumpright.png',
       framesMax: 2,
     },
     fall:{
-      imageSrc: './img/samuraiMack/Fall.png',
+      imageSrc: './img/samuraiMack/Fallright.png',
       framesMax: 2,  
     },
     attack1:{
-      imageSrc: './img/samuraiMack/Attack1.png',
+      imageSrc: './img/samuraiMack/Attack1right.png',
       framesMax: 6, 
     },
     attack3:{
-      imageSrc: './img/samuraiMack/Attack3.png',
+      imageSrc: './img/samuraiMack/Attack3right.png',
       framesMax: 6
     },
     takeHit:{
-      imageSrc: './img/samuraiMack/Take Hit2.png',
+      imageSrc: './img/samuraiMack/Take Hit2right.png',
       framesMax: 4
     },
     death:{
-      imageSrc: './img/samuraiMack/Death.png',
+      imageSrc: './img/samuraiMack/Deathright.png',
       framesMax: 6
     }
   },
@@ -67,10 +70,19 @@ offset:{
     height: 50
   }
 
-
 })
+function troca1Mack(){
+  player = mack
+  framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+  
+ }
 
 
+
+
+
+
+ 
 // personagem mack para o player 2
 const mack2 =  new Fighter({
     position:{
@@ -85,7 +97,7 @@ offset:{
   x:-50,
   y:0
 },
- imageSrc: './img/samuraiMack/Idle.png',
+ imageSrc: './img/samuraiMack/Idleleft.png',
  scale: 2.5,
  framesMax: 8,
  offset:{
@@ -94,7 +106,7 @@ offset:{
 },
   sprites:{
     idle:{
-      imageSrc: './img/samuraiMack/Idle.png',
+      imageSrc: './img/samuraiMack/Idleleft.png',
       framesMax: 8,
     },
     runLeft:{
@@ -102,31 +114,31 @@ offset:{
       framesMax: 8,   
     },
     runRight:{
-      imageSrc: './img/samuraiMack/RunRight.png',
+      imageSrc: './img/samuraiMack/Runleft.png',
       framesMax: 8,   
     },
     jump:{
-      imageSrc: './img/samuraiMack/Jump.png',
+      imageSrc: './img/samuraiMack/Jumpleft.png',
       framesMax: 2,
     },
     fall:{
-      imageSrc: './img/samuraiMack/Fall.png',
+      imageSrc: './img/samuraiMack/Fallleft.png',
       framesMax: 2,  
     },
     attack1:{
-      imageSrc: './img/samuraiMack/Attack1.png',
+      imageSrc: './img/samuraiMack/Attack1left.png',
       framesMax: 6, 
     },
     attack3:{
-      imageSrc: './img/samuraiMack/Attack3.png',
+      imageSrc: './img/samuraiMack/Attack3left.png',
       framesMax: 6
     },
     takeHit:{
-      imageSrc: './img/samuraiMack/Take Hit2.png',
+      imageSrc: './img/samuraiMack/Take Hit2left.png',
       framesMax: 4
     },
     death:{
-      imageSrc: './img/samuraiMack/Death.png',
+      imageSrc: './img/samuraiMack/Deathleft.png',
       framesMax: 6
     }
   },
@@ -141,6 +153,12 @@ offset:{
 
 
 })
+function troca2Mack(){
+  enemy = mack2
+  framecolisaop2 = 2  
+ 
+ }
+
 
 
 
@@ -163,7 +181,7 @@ offset:{
   y:0
 },
 
-imageSrc: './img/kenji/Idle.png',
+imageSrc: './img/kenji/Idleright.png',
 scale: 2.5,
 framesMax: 4,
 offset:{
@@ -172,7 +190,7 @@ offset:{
   },
     sprites:{
     idle:{
-      imageSrc: './img/kenji/Idle.png',
+      imageSrc: './img/kenji/Idleright.png',
       framesMax: 4,
     },
     runLeft:{
@@ -186,27 +204,27 @@ offset:{
        
     },
     jump:{
-      imageSrc: './img/kenji/Jump.png',
+      imageSrc: './img/kenji/Jumpright.png',
       framesMax: 2,
     },
     fall:{
-      imageSrc: './img/kenji/Fall.png',
+      imageSrc: './img/kenji/Fallright.png',
       framesMax: 2,  
     },
     attack1:{
-      imageSrc: './img/kenji/Attack1.png',
+      imageSrc: './img/kenji/Attack1right.png',
       framesMax: 4, 
     },
     attack3:{
-      imageSrc: ' ',/// futuro ataque especial
-      framesMax: 4, /// futuro ataque especial
+      imageSrc: './img/kenji/attack3right.png',
+      framesMax: 4, 
     },
     takeHit:{
-      imageSrc: './img/kenji/Take hit2.png',
+      imageSrc: './img/kenji/Take hit2right.png',
       framesMax: 3 
     },
     death:{
-      imageSrc: './img/kenji/Death.png',
+      imageSrc: './img/kenji/Deathright.png',
       framesMax: 7
     }
   },
@@ -220,7 +238,11 @@ offset:{
   }
 
 })
-
+function troca1Kenji(){
+  player = kenji1
+  framecolisaop1 = 2
+  
+ }
 
 
 
@@ -245,7 +267,7 @@ offset:{
   y:0
 },
 
-imageSrc: './img/kenji/Idle.png',
+imageSrc: './img/kenji/Idleleft.png',
 scale: 2.5,
 framesMax: 4,
 offset:{
@@ -254,7 +276,7 @@ offset:{
   },
     sprites:{
     idle:{
-      imageSrc: './img/kenji/Idle.png',
+      imageSrc: './img/kenji/Idleleft.png',
       framesMax: 4,
     },
     runLeft:{
@@ -268,27 +290,27 @@ offset:{
        
     },
     jump:{
-      imageSrc: './img/kenji/Jump.png',
+      imageSrc: './img/kenji/Jumpleft.png',
       framesMax: 2,
     },
     fall:{
-      imageSrc: './img/kenji/Fall.png',
+      imageSrc: './img/kenji/Fallleft.png',
       framesMax: 2,  
     },
     attack1:{
-      imageSrc: './img/kenji/Attack1.png',
+      imageSrc: './img/kenji/Attack1left.png',
       framesMax: 4, 
     },
     attack3:{
-      imageSrc: ' ',/// futuro ataque especial
-      framesMax: 4, /// futuro ataque especial
+      imageSrc: './img/kenji/attack3right.png',   // mudar para lef
+      framesMax: 4,
     },
     takeHit:{
-      imageSrc: './img/kenji/Take hit2.png',
+      imageSrc: './img/kenji/Take hit2left.png',
       framesMax: 3 
     },
     death:{
-      imageSrc: './img/kenji/Death.png',
+      imageSrc: './img/kenji/Deathleft.png',
       framesMax: 7
     }
   },
@@ -302,3 +324,28 @@ offset:{
   }
 
 })
+function troca2Kenji(){
+  enemy = kenji
+  framecolisaop2 = 2  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
