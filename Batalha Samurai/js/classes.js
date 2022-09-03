@@ -167,6 +167,12 @@ class Fighter extends Sprite {
     
   }
  
+
+  attackspear(){ 
+    this.switchSprites('attack3')
+    this.isAttacking = true
+  }
+
  
 
 
@@ -199,9 +205,6 @@ switchSprites(sprite){
 
   
   /////////troca sprites////////
-
-
-
 
 
   

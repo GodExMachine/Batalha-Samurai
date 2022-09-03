@@ -156,7 +156,7 @@ offset:{
 })
 function troca2Mack(){
   enemy = mack2
-  framecolisaop2 = 2  
+  framecolisaop2 = 4  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
   document.getElementById("escolhacharp2").innerHTML = ''
  }

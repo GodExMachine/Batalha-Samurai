@@ -237,6 +237,7 @@ const keys = {
 
   //função de ataque do player 2
   function P2attack(){
+    framecolisaop2 = 2
     keys.attackinimigo.pressed = true
     enemy.attackBox.width = 165
     enemy.attackBox.offset.x = -165
