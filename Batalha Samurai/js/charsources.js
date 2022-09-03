@@ -74,6 +74,8 @@ offset:{
 function troca1Mack(){
   player = mack
   framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+  document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
+  document.getElementById("escolhacharp1").innerHTML = ''
 }
 
 
@@ -113,7 +115,7 @@ offset:{
       framesMax: 8,   
     },
     runRight:{
-      imageSrc: './img/samuraiMack/Runleft.png',
+      imageSrc: './img/samuraiMack/RunRight.png',
       framesMax: 8,   
     },
     jump:{
@@ -155,7 +157,8 @@ offset:{
 function troca2Mack(){
   enemy = mack2
   framecolisaop2 = 2  
-
+  document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
+  document.getElementById("escolhacharp2").innerHTML = ''
  }
 
 
@@ -240,6 +243,8 @@ offset:{
 function troca1Kenji(){
   player = kenji1
   framecolisaop1 = 2
+  document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
+  document.getElementById("escolhacharp1").innerHTML = ''
  }
 
 
@@ -325,6 +330,8 @@ offset:{
 function troca2Kenji(){
   enemy = kenji
   framecolisaop2 = 2  
+  document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
+  document.getElementById("escolhacharp2").innerHTML = ''
  }
 
 

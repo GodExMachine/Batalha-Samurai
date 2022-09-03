@@ -111,9 +111,3 @@ function refresh(){
   location.reload();
 }
 
-
-
- function removeclases(){
-  document.getElementById("escolhepersonagem").classList.remove("escolhechar");
-  document.getElementById("escolhepersonagem").innerHTML = ''
-  }
