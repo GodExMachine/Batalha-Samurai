@@ -161,9 +161,9 @@ const keys = {
     keys.d.pressed = true
     player.lastKey = 'd' 
     removeGuiaBotao()
-
   }
 
+  
 
 
 

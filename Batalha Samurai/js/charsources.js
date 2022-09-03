@@ -74,8 +74,7 @@ offset:{
 function troca1Mack(){
   player = mack
   framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
-  
- }
+}
 
 
 
@@ -156,7 +155,7 @@ offset:{
 function troca2Mack(){
   enemy = mack2
   framecolisaop2 = 2  
- 
+
  }
 
 
@@ -241,7 +240,6 @@ offset:{
 function troca1Kenji(){
   player = kenji1
   framecolisaop1 = 2
-  
  }
 
 

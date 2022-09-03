@@ -1,6 +1,6 @@
 
 
-const tempodojogo = 25
+const tempodojogo = 50
 
 
 //Caracteristicas do Player
@@ -16,7 +16,7 @@ const puloplayer = 'w'
 const attackplayer = 's'
 
 const churiquem = 'c'
-var bolsashuriken = 40
+var bolsashuriken = 3
 
 
 
@@ -33,4 +33,4 @@ const puloinimigo = 'ArrowUp'
 const attackinimigo = 'ArrowDown'
 
 const superpower = ';'
-var bolsasuperpower = 40
+var bolsasuperpower = 3

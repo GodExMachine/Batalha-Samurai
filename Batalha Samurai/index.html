@@ -17,8 +17,26 @@
 
 </head>
 
-<body >
 
+
+
+<body >
+    
+        <div id="escolhepersonagem" class="escolhechar">
+            <div class="divbotaoescolha">
+                <img src="./img/botoes/player1kenji.png" class="botoesescolhap1" onclick="troca1Kenji()">
+                <img src="./img/botoes/player1mack.png" class="botoesescolhap1" onclick="troca1Mack()">
+                
+            </div>
+            <div class="divbotaoescolha">
+                <img src="./img/botoes/player2kenji.png" class="botoesescolhap2" onclick="troca2Kenji()">
+                <img src="./img/botoes/player2mack.png" class="botoesescolhap2" onclick="troca2Mack()">
+            </div> 
+            <div class="divbotaoniciar">
+                <button  class="botoeiniciar" onclick="removeclases()">iniciar</button>
+            </div>
+        </div>
+    
            
     <!--div que contem os mostradores de vida-->
     <div class="jogo">
@@ -48,7 +66,7 @@
 
         <!--div que contem a imagem que mostra os comandos-->
         <div class="listacomandos">
-            <img id="controlesdisplay" src="./img/Controles.png"> 
+            <img id="controlesdisplay" src=" "> 
         </div>
 
         <div id="displayText" class="vencedor">Empate</div>
@@ -63,10 +81,6 @@
             <button class="botoesgeral" id="playmusica" onclick="initAudioPlayer() ">Play</button><!--botao para teste-->
             <button  class="botoesgeral" id="mostrabotoes" onclick="guiabotoes()">Controles</button><!--mostrar o guia de botoes-->
             <button   class="botoesgeral"id="mute" onclick="trocafundo()">Background</button>
-            <button   class="botoesgeral" onclick="troca1Kenji()">Player 1 Kenji</button>
-            <button   class="botoesgeral" onclick="troca1Mack()">Player 1 Mack</button>
-            <button   class="botoesgeral" onclick="troca2Kenji()">Player 2  kenji</button>
-            <button   class="botoesgeral" onclick="troca2Mack()">Player 2  Mack</button>
             <button   class="botoesgeral" onclick="">Teste</button>
             
         </div>
