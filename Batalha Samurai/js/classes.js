@@ -81,7 +81,8 @@ class Fighter extends Sprite {
       imageSrc,
       scale,
       framesMax,
-      offset
+      offset,
+      
     })
 
     
@@ -160,6 +161,11 @@ class Fighter extends Sprite {
     this.isAttacking = true
   }
 
+  attackspear(){ 
+    this.switchSprites('attack3')
+    this.isAttacking = true
+  }
+
 
   takeHit(){
     this.switchSprites('takeHit')
@@ -168,11 +174,7 @@ class Fighter extends Sprite {
   }
  
 
-  attackspear(){ 
-    this.switchSprites('attack3')
-    this.isAttacking = true
-  }
-
+ 
  
 
 

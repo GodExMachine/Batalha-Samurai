@@ -340,6 +340,166 @@ function troca2Kenji(){
 
 
 
+// personagem warrior para o player 1
+const warrior1 =  new Fighter({
+  position:{
+  x:250,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:0,
+y:0
+},
+imageSrc: './img/warrior/Idleright.png',
+scale: 3,
+framesMax: 10,
+offset:{
+x: 215,
+y: 156
+},
+sprites:{
+  idle:{
+    imageSrc: './img/warrior/Idleright.png',
+    framesMax: 10,
+  },
+  runLeft:{
+    imageSrc: './img/warrior/Runleft.png',
+    framesMax: 8,   
+  },
+  runRight:{
+    imageSrc: './img/warrior/Runright.png',
+    framesMax: 8,   
+  },
+  jump:{
+    imageSrc: './img/warrior/Jumpright.png',
+    framesMax: 3,
+  },
+  fall:{
+    imageSrc: './img/warrior/Fallright.png',
+    framesMax: 3,  
+  },
+  attack1:{
+    imageSrc: './img/warrior/Attack1right.png',
+    framesMax: 8, 
+  },
+  attack3:{
+    imageSrc: './img/warrior/Attack3right.png',
+    framesMax: 7
+  },
+  takeHit:{
+    imageSrc: './img/warrior/Take Hitright.png',
+    framesMax: 3
+  },
+  death:{
+    imageSrc: './img/warrior/Deathright.png',
+    framesMax: 7
+  }
+},
+attackBox:{
+  offset:{
+    x:100,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+})
+function troca1Warrior(){
+player = warrior1
+framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp1").innerHTML = ''
+}
+
+
+
+
+
+
+
+// personagem warrior para o player 2
+const warrior2 =  new Fighter({
+  position:{
+  x:726,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:-50,
+y:0
+},
+imageSrc: './img/warrior/Idleleft.png',
+scale: 3,
+framesMax: 10,
+offset:{
+x: 215,
+y: 156
+},
+sprites:{
+  idle:{
+    imageSrc: './img/warrior/Idleleft.png',
+    framesMax: 10,
+  },
+  runLeft:{
+    imageSrc: './img/warrior/Runleft.png',
+    framesMax: 8,   
+  },
+  runRight:{
+    imageSrc: './img/warrior/Runright.png',
+    framesMax: 8,   
+  },
+  jump:{
+    imageSrc: './img/warrior/Jumpleft.png',
+    framesMax: 3,
+  },
+  fall:{
+    imageSrc: './img/warrior/Fallleft.png',
+    framesMax: 3,  
+  },
+  attack1:{
+    imageSrc: './img/warrior/Attack1left.png',
+    framesMax: 8, 
+  },
+  attack3:{
+    imageSrc: './img/warrior/Attack3left.png',
+    framesMax: 6
+  },
+  takeHit:{
+    imageSrc: './img/warrior/Take Hitleft.png',
+    framesMax: 3
+  },
+  death:{
+    imageSrc: './img/warrior/Deathleft.png',
+    framesMax: 7
+  }
+},
+attackBox:{
+  offset:{
+    x:-165,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+
+})
+function troca2Warrior(){
+enemy = warrior2
+framecolisaop2 = 4  
+document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp2").innerHTML = ''
+}
+
+
 
 
 

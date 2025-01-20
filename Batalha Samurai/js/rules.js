@@ -33,4 +33,4 @@ const puloinimigo = 'ArrowUp'
 const attackinimigo = 'ArrowDown'
 
 const superpower = ';'
-var bolsasuperpower = 3
+var bolsasuperpower = 10

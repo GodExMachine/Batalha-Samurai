@@ -248,8 +248,9 @@ const keys = {
   //função de ataque especial do player 2
   function P2especial(){
     if(bolsasuperpower > 0 && timer < 46 ){
-        enemy.attackBox.offset.x = -90
-        enemy.attackBox.width = -630
+      enemy.attackBox.offset.x = -90
+      
+       enemy.attackBox.width = -630
         keys.superpower.pressed = true
         enemy.attackspear()
         console.log('shuriken das sombras')
