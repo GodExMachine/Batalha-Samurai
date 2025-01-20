@@ -81,7 +81,7 @@ var player = undefined
 var enemy = undefined
 
 
-
+bolsas()
 
 decreaseTimer()
 

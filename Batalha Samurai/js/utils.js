@@ -29,6 +29,8 @@ function determineWinner ({player, enemy, timerId}){
       timerId = setTimeout(decreaseTimer, 1000)
       timer--
       document.querySelector('#timer').innerHTML = timer
+      bolsas()
+    
     }
 
      if(timer === 25){
@@ -111,3 +113,9 @@ function refresh(){
   location.reload();
 }
 
+
+
+function bolsas(){
+  document.getElementById('bolsa1').textContent = bolsashuriken
+  document.getElementById('bolsa2').textContent = bolsasuperpower
+}

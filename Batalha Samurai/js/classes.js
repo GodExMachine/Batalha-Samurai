@@ -123,7 +123,7 @@ class Fighter extends Sprite {
     if(!this.dead) this.animateFrames()
 
 
-
+      
     
 
     // atack boxes
@@ -132,7 +132,7 @@ class Fighter extends Sprite {
 
     ///--------------------->>>>>>
     //desenha a attack box
-     c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+     //c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
     
 
      //aqui so libera os movimentos de jogo igual true

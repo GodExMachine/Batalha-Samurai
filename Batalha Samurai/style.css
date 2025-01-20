@@ -192,10 +192,20 @@ canvas{
 
 /*menu de opções*/
  .menu{
+    
+    text-align: center;
     background-color: gray;
     width: 1024;
     height: 60px;
+    display: flex;           /* Usa flexbox para organizar os filhos */
+    justify-content: space-between; /* Garante que o conteúdo seja distribuído de forma que o 'Version 0.16' fique à esquerda */
  }
+.menu a {
+   margin-left: 0; /* Garantir que não haja margem extra à esquerda */
+   margin-top: auto;
+   margin-bottom: auto;
+ }
+ 
 
 
 /*outros botoes*/
@@ -203,13 +213,6 @@ canvas{
     margin: 5;
     height: 40px; 
     border-radius: 10%; 
-}
-
-/* imagen interna do botaorefresh*/
-.imgrefresh{
-    
-    height: 25px;
-    width: 25px;
 }
 
 

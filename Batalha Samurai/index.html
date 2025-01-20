@@ -36,36 +36,52 @@
             </div> 
         </div>
     
-           
+        
     <!--div que contem os mostradores de vida-->
     <div class="jogo">
         
         <!-- div menor que cotem os elementos superiores do jogo-->
         <div class="mostradores">
+            <!--contador shuriken -->
+            <div>
+                <img src="img/shurikens.png" width="40px">
+                <a id="bolsa1">a</a>
+
+            </div>         
                 <!--vida do player--> 
-            <div class="contornovidajogador">   
-                <!--a vida total do jogador-->
-                <div class="todavidajogador" ></div>
-                <!--quanto o jogador tem de vida no momento-->
-                <div class="vidajogador" id="playerHealth" ></div>
+                <div class="contornovidajogador">   
+                    <!--a vida total do jogador-->
+                    <div class="todavidajogador" ></div>
+                    <!--quanto o jogador tem de vida no momento-->
+                    <div class="vidajogador" id="playerHealth" ></div>
+                </div>
+
+                    <!--Timer-->
+                    <div id="timer" class="temporizador">
+                                 10
+                    </div>
+
+                <!--vida do inimigo-->
+                <div class="contornovidainimigo">
+                    <div class="todavidainimigo" ></div>
+                    <div  id="enemyHealth" class="vidainimigo"></div>
+                </div>
+            <!--contador shuriken -->
+            <div>
+                <img src="img/shurikens.png" width="40px">
+                <a id="bolsa2">a</a>
+                
             </div>
 
-            <!--Timer-->
-            <div id="timer" class="temporizador">
-              10
-            </div>
-
-            <!--vida do inimigo-->
-            <div class="contornovidainimigo">
-                <div class="todavidainimigo" ></div>
-                <div  id="enemyHealth" class="vidainimigo"></div>
-            </div>
-             
         </div>
+        
+
+
 
         <!--div que contem a imagem que mostra os comandos-->
         <div class="listacomandos">
             <img id="controlesdisplay" src=" "> 
+            
         </div>
 
         <div id="displayText" class="vencedor">Empate</div>
@@ -74,14 +90,20 @@
 
     </div>
 
+
+    
         <!-- Menu -->
         <div class="menu">
-            <button class="botoesgeral" onclick="refresh()"> <img class="imgrefresh" src="./img/reload.png"></button>
-            <button class="botoesgeral" id="playmusica" onclick="initAudioPlayer() ">Play</button><!--botao para teste-->
-            <button  class="botoesgeral" id="mostrabotoes" onclick="guiabotoes()">Controles</button><!--mostrar o guia de botoes-->
-            <button   class="botoesgeral"id="mute" onclick="trocafundo()">Background</button>
-            <button   class="botoesgeral" onclick="">Teste</button>
             
+         <div>
+            <button class="botoesgeral" id="playmusica" onclick="initAudioPlayer() ">Music</button><!--botao para teste-->
+            <button class="botoesgeral" id="mostrabotoes" onclick="guiabotoes()">Show Controls</button><!--mostrar o guia de botoes-->
+            <button class="botoesgeral" id="mute" onclick="trocafundo()">Background</button>
+            <button class="botoesgeral" onclick="">Teste</button>
+            <button class="botoesgeral" onclick="">Teste2</button>
+            <button class="botoesgeral" onclick="">Teste3</button>
+        </div>
+        <a>Version 0.16</a>
         </div>
 
 
