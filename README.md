@@ -50,15 +50,14 @@
 
 ### 14. Adicionado botoes para escolher o personagens
 
-
-
 ![Capturar](https://user-images.githubusercontent.com/88566095/187564349-83ca81ad-a32a-4dbc-b3ca-1669b8e1f360.PNG)
 
 
+### 14. Adicionado novo personagem e animaçoes de ataque.
 
 
 
-
+teste em http://samuraiz.online/
 
 
 
