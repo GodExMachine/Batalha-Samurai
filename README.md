@@ -1,4 +1,4 @@
-#criando um jogo de luta em Java Script.
+#criando um jogo de luta em Java Script. http://samuraiz.online/
 
 ### 1. Foi criando o canvas e inserido as propriedades de velocidade, posição e gravidade.
 
