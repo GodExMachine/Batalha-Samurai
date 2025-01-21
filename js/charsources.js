@@ -135,8 +135,8 @@ offset:{
       framesMax: 6, 
     },
     attack3:{
-      imageSrc: './img/samuraiMack/Attack3left.png',
-      framesMax: 6
+      imageSrc: './img/samuraiMack/Attack3left1.png',
+      framesMax: 4
     },
     takeHit:{
       imageSrc: './img/samuraiMack/Take Hit2left.png',

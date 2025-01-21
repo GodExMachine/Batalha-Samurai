@@ -202,8 +202,7 @@ const keys = {
         console.log('churiquem de fogoooooo!')
         somshurikem()
         bolsashuriken--
-        console.log(`offset.x: ${enemy.attackBox.offset.x}, width: ${enemy.attackBox.width}`);
-    }
+        }
   }
 
 
@@ -259,8 +258,7 @@ const keys = {
         console.log('shuriken das sombras')
         bolsasuperpower--
         somshurikem()
-        console.log(`offset.x: ${enemy.attackBox.offset.x}, width: ${enemy.attackBox.width}`);
-    }
+          }
     
   }
 
