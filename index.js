@@ -74,6 +74,34 @@ const shop = new Sprite({
 
 
 
+
+
+function isMobileDevice() {
+  return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Exibe aviso se for um dispositivo móvel
+if (isMobileDevice()) {
+  document.getElementById('mobile-warning').style.display = 'block';
+  document.getElementById('main-content').style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //jogador
 var player = undefined
 
