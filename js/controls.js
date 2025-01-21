@@ -250,7 +250,7 @@ const keys = {
   //função de ataque especial do player 2
   function P2especial(){
     if(bolsasuperpower > 0 && timer < 49 ){
-        enemy.attackBox.offset.x = -90    
+        enemy.attackBox.offset.x = -630    
         enemy.attackBox.width = 630
         keys.superpower.pressed = true
         framecolisaop2 = 2

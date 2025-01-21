@@ -1,12 +1,18 @@
-Preciso fazer o tempo iniciar somente apos os dois jogadores tiverem escolhido seu personagens
-
-adicionar um contaDOR A BAIXO DAS BAARAS MOSTRANDO QUANTAS CHURIQUEM CADA UM tempo
-
-preciso corrigir o atque especial do player 2
-
-se der certo isso criar mais personagem
+preciso corrigir as imagens o ataque especial do player editando as imagens
 
 
-preciso aranjar mais fundos
+colocar mais mapas (escolher o mapa antes do personagem?)
+
+
+colocar mais personagens (2 ja estão na pasta)
+
+
+o site deve ser um hub onde pode-se acessar o jogo e não direto o jogo?
+
+
+mudar as caracterizas de dano, altura e quantidade de pulos de acordo com o personagem escolhido, no momento oque decide é ser o player 1 ou o 2.
+
+
+é possível fazer esse jogo ser online (1x1) ? se não for então como recria-lo de forma que possa?
 
 
