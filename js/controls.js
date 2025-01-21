@@ -187,7 +187,7 @@ const keys = {
   function P1attack(){
     
     keys.attackplayer.pressed =  true
-    player.attackBox.width = 165
+    player.attackBox.width = 165  //posiçao
     player.attack()
     removeGuiaBotao()
   }
@@ -195,9 +195,9 @@ const keys = {
   //funçao de ataque especial do jogador
   function P1especial(){
     if(bolsashuriken > 0 && timer < 49 ){
-        player.attackBox.offset.x = 90
-        player.attackBox.width = 630
-        keys.chu.pressed = true 
+        player.attackBox.offset.x = 90 //posiçao
+        player.attackBox.width = 630//tamanho
+        keys.chu.pressed = true  
         player.attackshuriken()
         console.log('churiquem de fogoooooo!')
         somshurikem()
@@ -241,7 +241,8 @@ const keys = {
   function P2attack(){
     framecolisaop2 = 2
     keys.attackinimigo.pressed = true
-    enemy.attackBox.width = 165
+    enemy.attackBox.offset.x = -165  //posiçao
+    enemy.attackBox.width = 165 //tamanho
     
     enemy.attack()
     removeGuiaBotao()
@@ -250,8 +251,8 @@ const keys = {
   //função de ataque especial do player 2
   function P2especial(){
     if(bolsasuperpower > 0 && timer < 49 ){
-        enemy.attackBox.offset.x = -630    
-        enemy.attackBox.width = 630
+        enemy.attackBox.offset.x = -630  //posiçao  
+        enemy.attackBox.width = 630 //tamanho
         keys.superpower.pressed = true
         framecolisaop2 = 2
         enemy.attackspear()
