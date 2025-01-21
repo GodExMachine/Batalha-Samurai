@@ -37,9 +37,11 @@ http://samuraiz.online/
 
 ### 8. Adicionado colisao e acerto de dano para os dois jogadores.
 
+#### até este pronto o jogo foi criando com  base no video do you tube de Chris Courses
+https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
+
 
 ### 9. Mudanças no codigo e refatoração em funçoes.
-
 
 ### 10. Adicionado guia mostrando os controles, adicionado botao para mostrar os controles, criada animação para morte, adiconado botao para tocar a musica de fundo.
 
@@ -47,17 +49,17 @@ http://samuraiz.online/
 
 ### 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 
-
 ### 13. Adicionado botoes para quem acessar via dispositiveis mobile poder testar controlar um dos jogadores.
 
 ### 14. Adicionado botoes para escolher o personagens
 
 ![Capturar](https://user-images.githubusercontent.com/88566095/187564349-83ca81ad-a32a-4dbc-b3ca-1669b8e1f360.PNG)
 
-
 ### 15. Adicionado novo personagem e animaçoes de ataque.
 
 ### 16. Adicionado contador para o ataque a distancia.
+
+### 17. Corrigido Bugs visuais e no ataque do jogador 2.
 
 
 
@@ -65,5 +67,4 @@ teste em http://samuraiz.online/
 
 
 
-Jogo criando com base no video do you tube de Chris Courses
-https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
+
