@@ -205,8 +205,19 @@ canvas{
    margin-top: auto;
    margin-bottom: auto;
  }
- 
 
+
+.bolsas {
+    margin-top:5px;
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 /*outros botoes*/
 .botoesgeral{
