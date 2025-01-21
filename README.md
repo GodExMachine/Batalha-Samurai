@@ -37,7 +37,7 @@ http://samuraiz.online/
 
 ### 8. Adicionado colisao e acerto de dano para os dois jogadores.
 
-###00. (fim do tutorial) até este pronto o jogo foi criando com base no video do you tube de Chris Courses
+###  (Fim do tutorial) até este pronto o jogo foi criando com base no video do you tube de Chris Courses
 https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 
