@@ -185,6 +185,7 @@ const keys = {
 
   //funçao de ataque do jogador
   function P1attack(){
+    
     keys.attackplayer.pressed =  true
     player.attackBox.width = 165
     player.attack()
@@ -193,7 +194,7 @@ const keys = {
 
   //funçao de ataque especial do jogador
   function P1especial(){
-    if(bolsashuriken > 0 && timer < 46 ){
+    if(bolsashuriken > 0 && timer < 49 ){
         player.attackBox.offset.x = 90
         player.attackBox.width = 630
         keys.chu.pressed = true 
@@ -201,6 +202,7 @@ const keys = {
         console.log('churiquem de fogoooooo!')
         somshurikem()
         bolsashuriken--
+        console.log(`offset.x: ${enemy.attackBox.offset.x}, width: ${enemy.attackBox.width}`);
     }
   }
 
@@ -240,22 +242,23 @@ const keys = {
     framecolisaop2 = 2
     keys.attackinimigo.pressed = true
     enemy.attackBox.width = 165
-    enemy.attackBox.offset.x = -165
+    
     enemy.attack()
     removeGuiaBotao()
   }
 
   //função de ataque especial do player 2
   function P2especial(){
-    if(bolsasuperpower > 0 && timer < 46 ){
-      enemy.attackBox.offset.x = -90
-      
-       enemy.attackBox.width = -630
+    if(bolsasuperpower > 0 && timer < 49 ){
+        enemy.attackBox.offset.x = -90    
+        enemy.attackBox.width = 630
         keys.superpower.pressed = true
+        framecolisaop2 = 2
         enemy.attackspear()
         console.log('shuriken das sombras')
         bolsasuperpower--
         somshurikem()
+        console.log(`offset.x: ${enemy.attackBox.offset.x}, width: ${enemy.attackBox.width}`);
     }
     
   }

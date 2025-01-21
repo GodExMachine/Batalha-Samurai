@@ -132,8 +132,9 @@ class Fighter extends Sprite {
 
     ///--------------------->>>>>>
     //desenha a attack box
-     //c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
-    
+     if(showbox === true){
+      c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+     }
 
      //aqui so libera os movimentos de jogo igual true
     

@@ -15,7 +15,10 @@ function determineWinner ({player, enemy, timerId}){
   
   }
 
-
+var showbox = false
+function show(){
+  showbox = true
+}
 
 var p1ok = false
 var p2ok = false
