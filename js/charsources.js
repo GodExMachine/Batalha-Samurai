@@ -2,6 +2,7 @@ var framecolisaop1 = undefined
 var framecolisaop2 = undefined
 
 
+
 // personagem mack para o player 1
 const mack =  new Fighter({
     position:{
@@ -76,6 +77,9 @@ function troca1Mack(){
   framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
   document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
   document.getElementById("escolhacharp1").innerHTML = ''
+  console.log('trocado')
+  p1ok = true
+  comecar()
 }
 
 
@@ -159,6 +163,8 @@ function troca2Mack(){
   framecolisaop2 = 4  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
   document.getElementById("escolhacharp2").innerHTML = ''
+  p2ok = true
+  comecar()
  }
 
 
@@ -245,6 +251,8 @@ function troca1Kenji(){
   framecolisaop1 = 2
   document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
   document.getElementById("escolhacharp1").innerHTML = ''
+  p1ok = true
+  comecar()
  }
 
 
@@ -332,6 +340,8 @@ function troca2Kenji(){
   framecolisaop2 = 2  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
   document.getElementById("escolhacharp2").innerHTML = ''
+  p2ok = true
+  comecar()
  }
 
 
@@ -414,6 +424,8 @@ player = warrior1
 framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
 document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp1").innerHTML = ''
+p1ok = true
+comecar()
 }
 
 
@@ -497,6 +509,8 @@ enemy = warrior2
 framecolisaop2 = 4  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
+p2ok = true
+comecar()
 }
 
 
