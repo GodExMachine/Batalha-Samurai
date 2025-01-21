@@ -1,4 +1,4 @@
-#criando um jogo de luta em Java Script. 
+#criando um jogo de luta em JS.
 
 http://samuraiz.online/
 
