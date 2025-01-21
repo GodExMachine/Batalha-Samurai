@@ -49,7 +49,7 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 ### 12. o index.html foi refatorado e tambem foi criando o style.css para para deixar o codigo mais limpo.
 
-### 13. Adicionado botoes para quem acessar via dispositiveis mobile poder testar controlar um dos jogadores.
+### 13.~~ Adicionado botoes para quem acessar via dispositiveis mobile poder testar controlar um dos jogadores.~~
 
 ### 14. Adicionado botoes para escolher o personagens
 
