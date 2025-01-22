@@ -187,6 +187,7 @@ const keys = {
   function P1attack(){
     
     keys.attackplayer.pressed =  true
+    player.attackBox.offset.x = 80 //posiçao
     player.attackBox.width = 165  //posiçao
     player.attack()
     removeGuiaBotao()
@@ -240,7 +241,7 @@ const keys = {
   function P2attack(){
     framecolisaop2 = 2
     keys.attackinimigo.pressed = true
-    enemy.attackBox.offset.x = -165  //posiçao
+    enemy.attackBox.offset.x = -190  //posiçao
     enemy.attackBox.width = 165 //tamanho
     
     enemy.attack()
@@ -250,7 +251,7 @@ const keys = {
   //função de ataque especial do player 2
   function P2especial(){
     if(bolsasuperpower > 0 && timer < tempodopoder ){
-        enemy.attackBox.offset.x = -630  //posiçao  
+        enemy.attackBox.offset.x = -670  //posiçao  
         enemy.attackBox.width = 630 //tamanho
         keys.superpower.pressed = true
         framecolisaop2 = 2
