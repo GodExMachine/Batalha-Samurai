@@ -29,6 +29,13 @@ function comecar(){
   }
 }
 
+
+function somatempo(){
+
+  timer += 20
+}
+
+
   // temporizador 
   let timer = tempodojogo  
   let timerId 

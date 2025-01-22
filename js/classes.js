@@ -10,8 +10,6 @@ class Sprite {
     offset = {x: 0, y: 0} 
   }) {
     this.position = position
-    this.width = 50
-    this.height = 150
     this.image = new Image()
     this.image.src = imageSrc
     this.scale = scale
@@ -24,6 +22,8 @@ class Sprite {
 
 
   draw() {
+
+
     c.drawImage(
       this.image,
       this.frameCurrent * (this.image.width / this.framesMax),
@@ -133,7 +133,10 @@ class Fighter extends Sprite {
     ///--------------------->>>>>>
     //desenha a attack box
      if(showbox === true){
+      c.fillStyle = 'red' // comitar deixa ssemitransparente
       c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.width, this.attackBox.height)
+      c.fillStyle = 'blue'
+      c.fillRect(this.position.x, this.position.y, this.width, this.height)
      }
 
      //aqui so libera os movimentos de jogo igual true

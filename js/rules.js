@@ -1,6 +1,7 @@
 
 
 const tempodojogo = 50
+const tempodopoder = 150
 
 
 //Caracteristicas do Player

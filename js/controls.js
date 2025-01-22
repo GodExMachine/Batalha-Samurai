@@ -194,7 +194,7 @@ const keys = {
 
   //funçao de ataque especial do jogador
   function P1especial(){
-    if(bolsashuriken > 0 && timer < 49 ){
+    if(bolsashuriken > 0 && timer < tempodopoder ){
         player.attackBox.offset.x = 90 //posiçao
         player.attackBox.width = 630//tamanho
         keys.chu.pressed = true  
@@ -249,7 +249,7 @@ const keys = {
 
   //função de ataque especial do player 2
   function P2especial(){
-    if(bolsasuperpower > 0 && timer < 49 ){
+    if(bolsasuperpower > 0 && timer < tempodopoder ){
         enemy.attackBox.offset.x = -630  //posiçao  
         enemy.attackBox.width = 630 //tamanho
         keys.superpower.pressed = true
