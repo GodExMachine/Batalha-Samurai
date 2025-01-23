@@ -176,12 +176,14 @@ const keys = {
    }
 
   //funçao que faz o jogador pular
-  function P1pulo(){
-    if(player.position.y <= 329){
+  function P1pulo(){ 
+    if(p2ok === true){
+      if(player.position.y <= alturaLiberaPuloP1 ){
        player.velocity.y = this.player.velocity.y
-    } else{player.velocity.y = AltPuloPlayer}  // quanto o jogador pula
-    removeGuiaBotao()
-  }
+      } else{player.velocity.y = AltPuloPlayer}  // quanto o jogador pula
+      removeGuiaBotao()
+      }
+    }
 
   //funçao de ataque do jogador
   function P1attack(){
@@ -232,7 +234,7 @@ const keys = {
 
   //função que faz o jogador pular
   function P2pulo(){
-    if(enemy.position.y <= 129){
+    if(enemy.position.y <= alturaLiberaPuloP2){
         enemy.velocity.y = this.enemy.velocity.y
         } else{enemy.velocity.y = AltPuloInimigo} //  quanto o inimigo pula
     removeGuiaBotao()

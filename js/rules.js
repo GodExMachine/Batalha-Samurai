@@ -9,6 +9,7 @@ var danoPlayer = 25
 var VelEsquerdaPlayer = -5
 var VelDireitaPlayer = 5
 var AltPuloPlayer = -25
+var alturaLiberaPuloP1 = 329 
 var bolsashuriken = 3
 
 //controles Player
@@ -26,6 +27,7 @@ var danoInimigo = 20
 var VelEsquerdaInimigo = -5
 var VelDireitaInimigo = 5
 var AltPuloInimigo = -15
+var alturaLiberaPuloP2 = 129
 var bolsasuperpower = 3
 
 //controles Inimigo

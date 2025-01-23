@@ -20,14 +20,22 @@ function show(){
   showbox = true
 }
 
+
 var p1ok = false
 var p2ok = false
+
 
 function comecar(){
   if(p1ok && p2ok){
     decreaseTimer()
   }
+
+
+
 }
+
+
+
 
 
 function somatempo(){
@@ -37,10 +45,15 @@ function somatempo(){
 
 
   // temporizador 
+  let atackliberado = false
   let timer = tempodojogo  
   let timerId 
   function decreaseTimer(){
     
+   
+    if(timer === tempodopoder){
+     atackliberado = true
+    }
     
     if(timer > 0 ){
   
@@ -132,7 +145,7 @@ function refresh(){
 }
 
 
-
+// funcao que conta quantas shuriken tem nas bolsas e poe elas na tela.
 function bolsas(){
   document.getElementById('bolsa1').textContent = bolsashuriken
   document.getElementById('bolsa2').textContent = bolsasuperpower

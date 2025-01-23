@@ -125,7 +125,8 @@ function troca1Mack(){
  danoPlayer = 25
  VelEsquerdaPlayer = -5
  VelDireitaPlayer = 5
- AltPuloPlayer = -2
+ AltPuloPlayer = -25
+ alturaLiberaPuloP1 = 329 
  bolsashuriken = 10
 
 
