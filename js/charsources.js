@@ -121,6 +121,14 @@ offset:{
 
 })
 function troca1Mack(){
+//Caracteristicas do personagem
+ danoPlayer = 25
+ VelEsquerdaPlayer = -5
+ VelDireitaPlayer = 5
+ AltPuloPlayer = -2
+ bolsashuriken = 10
+
+
   player = mack
   framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
   document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
@@ -238,6 +246,9 @@ offset:{
 
 })
 function troca2Mack(){
+  if (p1ok === true) {
+
+
   enemy = mack2
   framecolisaop2 = 4  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
@@ -245,6 +256,7 @@ function troca2Mack(){
   p2ok = true
   comecar()
  }
+}
 
 
 //-----------------------------------------------------//
@@ -481,6 +493,7 @@ offset:{
 
 })
 function troca2Kenji(){
+  if (p1ok === true) {
   enemy = kenji
   framecolisaop2 = 2  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
@@ -488,6 +501,7 @@ function troca2Kenji(){
   p2ok = true
   comecar()
  }
+}
 
 
 //-----------------------------------------------------//
@@ -715,12 +729,14 @@ attackBox:{
 
 })
 function troca2Warrior(){
+  if (p1ok === true) {
 enemy = warrior2
 framecolisaop2 = 5  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+  }
 }
 
 //-----------------------------------------------------//
@@ -948,12 +964,14 @@ attackBox:{
 
 })
 function troca2knight(){
+  if (p1ok === true) {
 enemy = knight2
 framecolisaop2 = 4  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+  }
 }
 
 //-----------------------------------------------------//
@@ -1187,14 +1205,15 @@ attackBox:{
 
 })
 function troca2EvilWizard(){
+  if (p1ok === true) {
 enemy = EvilWizard2
 framecolisaop2 = 4  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+  }
 }
-
 
 
 
