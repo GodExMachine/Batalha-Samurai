@@ -1,4 +1,4 @@
-### criando um jogo de luta criado JavaScrip CSS e HTML.
+### Jogo de luta criando com JavaScrip, CSS e HTML.
 
 
 ### Teste o Jogo em 
