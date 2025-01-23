@@ -35,7 +35,17 @@ var background3 = new Sprite({
   },
   imageSrc: './img/background3.png'
 })
+
+var background4 = new Sprite({
+  position:{
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background4.png'
+})
   
+
+
 //esta função muda o numero para a proxima função trocar o fundo
 var numbackground = 1
 function trocafundo(){
@@ -49,7 +59,11 @@ function fundoescolhido(){
   }else
   if(numbackground === 3){
     background3.update()
-  }else{
+  }
+  if(numbackground === 4){
+    background4.update()
+  }
+  else{
     background1.update()
     shop.update() //desenha a lojinha
   }
