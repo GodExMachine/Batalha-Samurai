@@ -189,8 +189,10 @@ const keys = {
   function P1attack(){
     
     keys.attackplayer.pressed =  true
-    player.attackBox.offset.x = 80 //posiçao
-    player.attackBox.width = 165  //posiçao
+    player.attackBox.offset.x = DistanciaAttackP1.dist //posiçao
+    player.attackBox.width = DistanciaAttackP1.larg  //tamanho
+   // player.attackBox.offset.y = DistanciaAttackP1.alt // esse funciona mais ou menos
+   // player.attackBox.height = DistanciaAttackP1.atl //altura <-- nao funcionado , tenho que descobrir porque
     player.attack()
     removeGuiaBotao()
   }
@@ -244,9 +246,9 @@ const keys = {
   function P2attack(){
     framecolisaop2 = 2
     keys.attackinimigo.pressed = true
-    enemy.attackBox.offset.x = -190  //posiçao
-    enemy.attackBox.width = 165 //tamanho
-    
+    enemy.attackBox.offset.x = DistanciaAttackP2.dist  //posiçao
+    enemy.attackBox.width = DistanciaAttackP2.larg  //tamanho
+    //enemy.attackBox.height = DistanciaAttackP2.atl //altura <-- nao funcionado , tenho que descobrir porque
     enemy.attack()
     removeGuiaBotao()
   }

@@ -41,6 +41,7 @@ function comecar(){
 function somatempo(){
 
   timer += 20
+  tempodopoder +=20
 }
 
 

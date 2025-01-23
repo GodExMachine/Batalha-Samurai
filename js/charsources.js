@@ -122,13 +122,13 @@ offset:{
 })
 function troca1Mack(){
 //Caracteristicas do personagem
- danoPlayer = 25
- VelEsquerdaPlayer = -5
- VelDireitaPlayer = 5
- AltPuloPlayer = -25
- alturaLiberaPuloP1 = 329 
- bolsashuriken = 10
-
+   danoPlayer = 25
+   VelEsquerdaPlayer = -5
+   VelDireitaPlayer = 5
+   AltPuloPlayer = -20
+   alturaLiberaPuloP1 = 329 
+   bolsashuriken = 3
+   DistanciaAttackP1 = {dist: 80, larg: 200, alt: 0}
 
   player = mack
   framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
@@ -248,7 +248,14 @@ offset:{
 })
 function troca2Mack(){
   if (p1ok === true) {
-
+    danoInimigo = 25
+    VelEsquerdaInimigo = -5
+    VelDireitaInimigo = 5
+    AltPuloInimigo = -20
+    alturaLiberaPuloP2 = 329
+    bolsasuperpower = 3
+    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+    
 
   enemy = mack2
   framecolisaop2 = 4  
@@ -374,6 +381,14 @@ offset:{
 
 })
 function troca1Kenji(){
+   danoPlayer = 15
+   VelEsquerdaPlayer = -7
+   VelDireitaPlayer = 7
+   AltPuloPlayer = -15
+   alturaLiberaPuloP1 = 129
+   bolsashuriken = 5
+   DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
+
   player = kenji1
   framecolisaop1 = 2
   document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
@@ -495,6 +510,14 @@ offset:{
 })
 function troca2Kenji(){
   if (p1ok === true) {
+    danoInimigo = 15
+    VelEsquerdaInimigo = -7
+    VelDireitaInimigo = 7
+    AltPuloInimigo = -15
+    alturaLiberaPuloP2 = 129
+    bolsasuperpower = 5
+    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+
   enemy = kenji
   framecolisaop2 = 2  
   document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
@@ -614,6 +637,14 @@ attackBox:{
 
 })
 function troca1Warrior(){
+  danoPlayer = 25
+  VelEsquerdaPlayer = -5
+  VelDireitaPlayer = 5
+  AltPuloPlayer = -25
+  alturaLiberaPuloP1 = 329 
+  bolsashuriken = 3
+  DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
+
 player = warrior1
 framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
 document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
@@ -731,6 +762,14 @@ attackBox:{
 })
 function troca2Warrior(){
   if (p1ok === true) {
+    danoInimigo = 20
+    VelEsquerdaInimigo = -5
+    VelDireitaInimigo = 5
+    AltPuloInimigo = -15
+    alturaLiberaPuloP2 = 129
+    bolsasuperpower = 3
+    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+
 enemy = warrior2
 framecolisaop2 = 5  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
@@ -849,6 +888,14 @@ attackBox:{
 
 })
 function troca1knight(){
+  danoPlayer = 25
+  VelEsquerdaPlayer = -5
+  VelDireitaPlayer = 5
+  AltPuloPlayer = -25
+  alturaLiberaPuloP1 = 329 
+  bolsashuriken = 3
+  DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
+  
 player = knight1
 framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
 document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
@@ -966,6 +1013,14 @@ attackBox:{
 })
 function troca2knight(){
   if (p1ok === true) {
+    danoInimigo = 20
+    VelEsquerdaInimigo = -5
+    VelDireitaInimigo = 5
+    AltPuloInimigo = -15
+    alturaLiberaPuloP2 = 129
+    bolsasuperpower = 3
+    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+
 enemy = knight2
 framecolisaop2 = 4  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
@@ -974,6 +1029,7 @@ p2ok = true
 comecar()
   }
 }
+
 
 //-----------------------------------------------------//
 
@@ -1085,6 +1141,14 @@ attackBox:{
 
 })
 function troca1EvilWizard(){
+  danoPlayer = 25
+  VelEsquerdaPlayer = -5
+  VelDireitaPlayer = 5
+  AltPuloPlayer = -25
+  alturaLiberaPuloP1 = 329 
+  bolsashuriken = 3
+  DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
+
 player = EvilWizard1
 framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
 document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
@@ -1207,6 +1271,14 @@ attackBox:{
 })
 function troca2EvilWizard(){
   if (p1ok === true) {
+    danoInimigo = 20
+    VelEsquerdaInimigo = -5
+    VelDireitaInimigo = 5
+    AltPuloInimigo = -15
+    alturaLiberaPuloP2 = 129
+    bolsasuperpower = 3
+    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+
 enemy = EvilWizard2
 framecolisaop2 = 4  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
