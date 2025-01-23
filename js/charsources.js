@@ -686,7 +686,7 @@ sprites:{
   },
   attack3:{
     imageSrc: './img/warrior/Attack3left.png',
-    framesMax: 6,
+    framesMax: 7,
     offset:{
       x: 730,
       y: 156
@@ -722,7 +722,7 @@ attackBox:{
 })
 function troca2Warrior(){
 enemy = warrior2
-framecolisaop2 = 4  
+framecolisaop2 = 5  
 document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
