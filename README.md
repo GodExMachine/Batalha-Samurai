@@ -1,4 +1,4 @@
-#criando um jogo de luta criado usando JavaScrip CSS e HTML.
+#criando um jogo de luta criado JavaScrip CSS e HTML.
 
 <details>
   <summary>Detalhes das Atualizações. </summary>
