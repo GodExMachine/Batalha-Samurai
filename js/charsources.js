@@ -3,6 +3,18 @@ var framecolisaop2 = undefined
 
 
 
+
+/// verificar para por nas functions dos personagem as caractristicas de tamanho da area do dano e quantidade de dano
+
+// verificar tambem uma posibilidade de colocar um custo de stamina para jogar -- talvez essa funcionalidade tem que funcionar 
+// ou nao dependendo da escolha do jogador antes de escolher o personagem
+
+// colocar a funcionalidade de escolher o mapa antes de escolher o personagem e
+
+
+//-----------------------------------------------------//
+
+
 // personagem mack para o player 1
 const mack =  new Fighter({
     position:{
@@ -119,16 +131,6 @@ function troca1Mack(){
 }
 
 
-/// verificar para por nas functions dos personagem as caractristicas de tamanho da area do dano e quantidade de dano
-
-// verificar tambem uma posibilidade de colocar um custo de stamina para jogar -- talvez essa funcionalidade tem que funcionar 
-// ou nao dependendo da escolha do jogador antes de escolher o personagem
-
-// colocar a funcionalidade de escolher o mapa antes de escolher o personagem e
-
-
-
- 
 // personagem mack para o player 2
 const mack2 =  new Fighter({
     position:{
@@ -245,8 +247,7 @@ function troca2Mack(){
  }
 
 
-
-
+//-----------------------------------------------------//
 
 
 //personagen kenji para o player 1
@@ -369,11 +370,6 @@ function troca1Kenji(){
  }
 
 
-
-
-
-
-
 //personagen kenji para o player 2
 const kenji = new Fighter({
     position:{
@@ -494,9 +490,7 @@ function troca2Kenji(){
  }
 
 
-
-
-
+//-----------------------------------------------------//
 
 
 // personagem warrior para o player 1
@@ -614,11 +608,6 @@ comecar()
 }
 
 
-
-
-
-
-
 // personagem warrior para o player 2
 const warrior2 =  new Fighter({
   position:{
@@ -734,13 +723,7 @@ p2ok = true
 comecar()
 }
 
-
-
-
-
-
-
-
+//-----------------------------------------------------//
 
 
 // personagem knight para o player 1
@@ -858,11 +841,6 @@ comecar()
 }
 
 
-
-
-
-
-
 // personagem knight para o player 2
 const knight2 =  new Fighter({
   position:{
@@ -978,7 +956,244 @@ p2ok = true
 comecar()
 }
 
+//-----------------------------------------------------//
 
+
+
+// personagem Evil Wizard para o player 1
+const EvilWizard1 =  new Fighter({
+  position:{
+  x:250,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:0,
+y:0
+},
+imageSrc: './img/evilwizard/Idleright.png',
+scale: 2.5,
+framesMax: 8,
+offset:{
+x: 320,
+y: 270
+},
+sprites:{
+  idle:{
+    imageSrc: './img/evilwizard/Idleright.png',
+    framesMax: 8,
+    offset:{
+      x: 320,
+      y: 270
+      }
+  },
+  runLeft:{
+    imageSrc: './img/evilwizard/Runleft.png',
+    framesMax: 8,
+    offset:{
+      x: 320,
+      y: 270
+      }   
+  },
+  runRight:{
+    imageSrc: './img/evilwizard/Runright.png',
+    framesMax: 8,
+    offset:{
+      x: 320,
+      y: 270
+      }   
+  },
+  jump:{
+    imageSrc: './img/evilwizard/Jumpright.png',
+    framesMax: 2,
+    offset:{
+      x: 320,
+      y: 270
+      }
+  },
+  fall:{
+    imageSrc: './img/evilwizard/Fallright.png',
+    framesMax: 2,
+    offset:{
+      x: 320,
+      y: 270
+      }  
+  },
+  attack1:{
+    imageSrc: './img/evilwizard/Attack1right.png',
+    framesMax: 8,
+    offset:{
+      x: 320,
+      y: 270
+      } 
+  },
+  attack3:{
+    imageSrc: './img/evilwizard/Attack3right.png',
+    framesMax: 7,
+    offset:{
+      x: 320,
+      y: 270
+      }
+  },
+  takeHit:{
+    imageSrc: './img/evilwizard/takehitleft.png',
+    framesMax: 3,
+    offset:{
+      x: 320,
+      y: 270
+      }
+  },
+  death:{
+    imageSrc: './img/evilwizard/Deathright.png',
+    framesMax: 7,
+    offset:{
+      x: 320,
+      y: 270
+      }
+  }
+},
+attackBox:{
+  offset:{
+    x:100,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+})
+function troca1EvilWizard(){
+player = EvilWizard1
+framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp1").innerHTML = ''
+p1ok = true
+comecar()
+}
+
+
+
+
+
+
+
+// personagem Evil Wizard para o player 2
+const EvilWizard2 =  new Fighter({
+  position:{
+  x:726,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:-50,
+y:0
+},
+imageSrc: './img/evilwizard/Idleleft.png',
+scale: 2.5,
+framesMax: 8,
+offset:{
+x: 255,
+y: 270
+},
+sprites:{
+  idle:{
+    imageSrc: './img/evilwizard/Idleleft.png',
+    framesMax: 8,
+    offset:{
+      x: 255,
+      y: 270
+      }
+  },
+  runLeft:{
+    imageSrc: './img/evilwizard/Runleft.png',
+    framesMax: 8,
+    offset:{
+      x: 255,
+      y: 270
+      }   
+  },
+  runRight:{
+    imageSrc: './img/evilwizard/Runright.png',
+    framesMax: 8,
+    offset:{
+      x: 255,
+      y: 270
+      }   
+  },
+  jump:{
+    imageSrc: './img/evilwizard/Jumpleft.png',
+    framesMax: 3,
+    offset:{
+      x: 255,
+      y: 270
+      }
+  },
+  fall:{
+    imageSrc: './img/evilwizard/Fallleft.png',
+    framesMax: 2,
+    offset:{
+      x: 255,
+      y: 270
+      }  
+  },
+  attack1:{
+    imageSrc: './img/evilwizard/Attack1left.png',
+    framesMax: 8,
+    offset:{
+      x: 255,
+      y: 270
+      } 
+  },
+  attack3:{
+    imageSrc: './img/evilwizard/Attack3left.png',
+    framesMax: 7,
+    offset:{
+      x: 730,
+      y: 270
+      }
+  },
+  takeHit:{
+    imageSrc: './img/evilwizard/takeHitleft.png',
+    framesMax: 3,
+    offset:{
+      x: 255,
+      y: 270
+      }
+  },
+  death:{
+    imageSrc: './img/evilwizard/deathleft.png',
+    framesMax: 7,
+    offset:{
+      x: 255,
+      y: 270
+      }
+  }
+},
+attackBox:{
+  offset:{
+    x:-165,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+
+})
+function troca2EvilWizard(){
+enemy = EvilWizard2
+framecolisaop2 = 4  
+document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp2").innerHTML = ''
+p2ok = true
+comecar()
+}
 
 
 
