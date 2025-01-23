@@ -1,5 +1,9 @@
 #criando um jogo de luta criado JavaScrip CSS e HTML.
 
+
+Teste o Jogo em 
+## http://samuraiz.online/
+
 <details>
   <summary>Detalhes das Atualizações. </summary>
   
@@ -66,11 +70,9 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 ### 19. Sprites atualizadas para funcionarem corretamente com as correções.
 
-### 20. Iserido um novo perosnagem.
+### 20. Iserido um novo personagem.
 
 
 </details>
-##
-Teste o Jogo em 
-http://samuraiz.online/
+
 
