@@ -220,6 +220,7 @@ switchSprites(sprite){
       this.image =  this.sprites.idle.image
       this.framesMax =  this.sprites.idle.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.idle.offset
     }
       break;
     case 'runLeft':
@@ -227,6 +228,7 @@ switchSprites(sprite){
       this.image =  this.sprites.runLeft.image 
       this.framesMax =  this.sprites.runLeft.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.runLeft.offset
     }
     break;
     case 'runRight':
@@ -234,6 +236,7 @@ switchSprites(sprite){
       this.image =  this.sprites.runRight.image 
       this.framesMax =  this.sprites.runRight.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.runRight.offset
     }
     break;
     case 'jump':
@@ -241,6 +244,7 @@ switchSprites(sprite){
       this.image = this.sprites.jump.image
       this.framesMax =  this.sprites.jump.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.jump.offset
       }
     break;
     case 'fall':
@@ -248,6 +252,7 @@ switchSprites(sprite){
       this.image = this.sprites.fall.image
       this.framesMax =  this.sprites.fall.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.fall.offset
       }
     break;
     case 'attack1':
@@ -255,6 +260,7 @@ switchSprites(sprite){
       this.image = this.sprites.attack1.image
       this.framesMax =  this.sprites.attack1.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.attack1.offset
       }
     break;
     case 'attack3':
@@ -262,6 +268,7 @@ switchSprites(sprite){
       this.image = this.sprites.attack3.image
       this.framesMax =  this.sprites.attack3.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.attack3.offset
       }
     break;
     case 'takeHit':
@@ -269,6 +276,7 @@ switchSprites(sprite){
       this.image = this.sprites.takeHit.image
       this.framesMax =  this.sprites.takeHit.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.takeHit.offset
       }
     break;
 
@@ -277,6 +285,7 @@ switchSprites(sprite){
       this.image = this.sprites.death.image
       this.framesMax =  this.sprites.death.framesMax
       this.frameCurrent = 0
+      this.offset = this.sprites.death.offset
       }
     
   }

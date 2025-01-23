@@ -28,38 +28,74 @@ offset:{
     idle:{
       imageSrc: './img/samuraiMack/Idleright.png',
       framesMax: 8,
+      offset:{
+        x: 215,
+        y: 156
+      },
     },
     runLeft:{
       imageSrc: './img/samuraiMack/RunLeft.png',
-      framesMax: 8,   
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 156
+      },   
     },
     runRight:{
       imageSrc: './img/samuraiMack/RunRight.png',
-      framesMax: 8,   
+      framesMax: 8, 
+      offset:{
+        x: 215,
+        y: 156
+      },  
     },
     jump:{
       imageSrc: './img/samuraiMack/Jumpright.png',
       framesMax: 2,
+      offset:{
+        x: 215,
+        y: 156
+      },
     },
     fall:{
       imageSrc: './img/samuraiMack/Fallright.png',
-      framesMax: 2,  
+      framesMax: 2, 
+      offset:{
+        x: 215,
+        y: 156
+      }, 
     },
     attack1:{
       imageSrc: './img/samuraiMack/Attack1right.png',
       framesMax: 6, 
+      offset:{
+        x: 215,
+        y: 156
+      },
     },
     attack3:{
       imageSrc: './img/samuraiMack/Attack3right.png',
-      framesMax: 6
+      framesMax: 6,
+      offset:{
+        x: 215,
+        y: 156
+      },
     },
     takeHit:{
       imageSrc: './img/samuraiMack/Take Hit2right.png',
-      framesMax: 4
+      framesMax: 4,
+      offset:{
+        x: 215,
+        y: 156
+      },
     },
     death:{
       imageSrc: './img/samuraiMack/Deathright.png',
-      framesMax: 6
+      framesMax: 6,
+      offset:{
+        x: 215,
+        y: 156
+      },
     }
   },
   attackBox:{
@@ -113,38 +149,74 @@ offset:{
     idle:{
       imageSrc: './img/samuraiMack/Idleleft.png',
       framesMax: 8,
+      offset:{
+        x: 215,
+        y: 156
+      }
     },
     runLeft:{
       imageSrc: './img/samuraiMack/RunLeft.png',
-      framesMax: 8,   
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 156
+      }   
     },
     runRight:{
       imageSrc: './img/samuraiMack/RunRight.png',
-      framesMax: 8,   
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 156
+      }   
     },
     jump:{
       imageSrc: './img/samuraiMack/Jumpleft.png',
       framesMax: 2,
+      offset:{
+        x: 215,
+        y: 156
+      }
     },
     fall:{
       imageSrc: './img/samuraiMack/Fallleft.png',
-      framesMax: 2,  
+      framesMax: 2,
+      offset:{
+        x: 215,
+        y: 156
+      }  
     },
     attack1:{
       imageSrc: './img/samuraiMack/Attack1left.png',
-      framesMax: 6, 
+      framesMax: 6,
+      offset:{
+        x: 215,
+        y: 156
+      } 
     },
     attack3:{
-      imageSrc: './img/samuraiMack/Attack3left1.png',
-      framesMax: 4
+      imageSrc: './img/samuraiMack/Attack3left.png',
+      framesMax: 6,
+      offset:{
+        x: 730,
+        y: 156
+      },
     },
     takeHit:{
       imageSrc: './img/samuraiMack/Take Hit2left.png',
-      framesMax: 4
+      framesMax: 4,
+      offset:{
+        x: 215,
+        y: 156
+      }
     },
     death:{
       imageSrc: './img/samuraiMack/Deathleft.png',
-      framesMax: 6
+      framesMax: 6,
+      offset:{
+        x: 215,
+        y: 156
+      }
     }
   },
   attackBox:{
@@ -200,40 +272,76 @@ offset:{
     idle:{
       imageSrc: './img/kenji/Idleright.png',
       framesMax: 4,
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     runLeft:{
       imageSrc: './img/kenji/RunLeft.png',
-      framesMax: 8,  
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 170
+         }  
        
     },
     runRight:{
       imageSrc: './img/kenji/RunRight.png',
-      framesMax: 8,  
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 170
+         }  
        
     },
     jump:{
       imageSrc: './img/kenji/Jumpright.png',
       framesMax: 2,
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     fall:{
       imageSrc: './img/kenji/Fallright.png',
-      framesMax: 2,  
+      framesMax: 2,
+      offset:{
+        x: 215,
+        y: 170
+         }  
     },
     attack1:{
       imageSrc: './img/kenji/Attack1right.png',
-      framesMax: 4, 
+      framesMax: 4,
+      offset:{
+        x: 215,
+        y: 170
+         } 
     },
     attack3:{
       imageSrc: './img/kenji/attack3right.png',
-      framesMax: 4, 
+      framesMax: 4,
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     takeHit:{
       imageSrc: './img/kenji/Take hit2right.png',
-      framesMax: 3 
+      framesMax: 3,
+      offset:{
+        x: 215,
+        y: 170
+         } 
     },
     death:{
       imageSrc: './img/kenji/Deathright.png',
-      framesMax: 7
+      framesMax: 7,
+      offset:{
+        x: 215,
+        y: 170
+         }
     }
   },
   attackBox:{
@@ -289,40 +397,76 @@ offset:{
     idle:{
       imageSrc: './img/kenji/Idleleft.png',
       framesMax: 4,
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     runLeft:{
       imageSrc: './img/kenji/RunLeft.png',
-      framesMax: 8,  
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 170
+         }  
        
     },
     runRight:{
       imageSrc: './img/kenji/RunRight.png',
-      framesMax: 8,  
+      framesMax: 8,
+      offset:{
+        x: 215,
+        y: 170
+         }  
        
     },
     jump:{
       imageSrc: './img/kenji/Jumpleft.png',
       framesMax: 2,
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     fall:{
       imageSrc: './img/kenji/Fallleft.png',
-      framesMax: 2,  
+      framesMax: 2, 
+      offset:{
+        x: 215,
+        y: 170
+         } 
     },
     attack1:{
       imageSrc: './img/kenji/Attack1left.png',
       framesMax: 4, 
+      offset:{
+        x: 215,
+        y: 170
+         }
     },
     attack3:{
       imageSrc: './img/kenji/attack3right.png',   // mudar para lef
       framesMax: 4,
+      offset:{
+        x: 730, /// mecher aqui
+        y: 170 /// mecher aqui
+         }
     },
     takeHit:{
       imageSrc: './img/kenji/Take hit2left.png',
-      framesMax: 3 
+      framesMax: 3,
+      offset:{
+        x: 215,
+        y: 170
+         } 
     },
     death:{
       imageSrc: './img/kenji/Deathleft.png',
-      framesMax: 7
+      framesMax: 7,
+      offset:{
+        x: 215,
+        y: 170
+         }
     }
   },
   attackBox:{
@@ -375,38 +519,74 @@ sprites:{
   idle:{
     imageSrc: './img/warrior/Idleright.png',
     framesMax: 10,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   runLeft:{
     imageSrc: './img/warrior/Runleft.png',
-    framesMax: 8,   
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      }   
   },
   runRight:{
     imageSrc: './img/warrior/Runright.png',
-    framesMax: 8,   
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      }   
   },
   jump:{
     imageSrc: './img/warrior/Jumpright.png',
     framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   fall:{
     imageSrc: './img/warrior/Fallright.png',
-    framesMax: 3,  
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }  
   },
   attack1:{
     imageSrc: './img/warrior/Attack1right.png',
-    framesMax: 8, 
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      } 
   },
   attack3:{
     imageSrc: './img/warrior/Attack3right.png',
-    framesMax: 7
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   takeHit:{
     imageSrc: './img/warrior/Take Hitright.png',
-    framesMax: 3
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   death:{
     imageSrc: './img/warrior/Deathright.png',
-    framesMax: 7
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 156
+      }
   }
 },
 attackBox:{
@@ -459,38 +639,74 @@ sprites:{
   idle:{
     imageSrc: './img/warrior/Idleleft.png',
     framesMax: 10,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   runLeft:{
     imageSrc: './img/warrior/Runleft.png',
-    framesMax: 8,   
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      }   
   },
   runRight:{
     imageSrc: './img/warrior/Runright.png',
-    framesMax: 8,   
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      }   
   },
   jump:{
     imageSrc: './img/warrior/Jumpleft.png',
     framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   fall:{
     imageSrc: './img/warrior/Fallleft.png',
-    framesMax: 3,  
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }  
   },
   attack1:{
     imageSrc: './img/warrior/Attack1left.png',
-    framesMax: 8, 
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 156
+      } 
   },
   attack3:{
     imageSrc: './img/warrior/Attack3left.png',
-    framesMax: 6
+    framesMax: 6,
+    offset:{
+      x: 730,
+      y: 156
+      }
   },
   takeHit:{
     imageSrc: './img/warrior/Take Hitleft.png',
-    framesMax: 3
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 156
+      }
   },
   death:{
     imageSrc: './img/warrior/Deathleft.png',
-    framesMax: 7
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 156
+      }
   }
 },
 attackBox:{
