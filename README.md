@@ -2,7 +2,15 @@
 
 http://samuraiz.online/
 
-### 1. Foi criando o canvas e inserido as propriedades de velocidade, posição e gravidade.
+
+
+
+
+
+<details>
+  <summary>Detalhes das Atualizações. </summary>
+  
+  ### 1. Foi criando o canvas e inserido as propriedades de velocidade, posição e gravidade.
 
 
 ![185760352-4a13aff2-1f7c-422c-9cae-6a10f6dffca1](https://user-images.githubusercontent.com/88566095/187563661-ec921730-3481-46ae-8ae4-06996a6b1db8.png)
@@ -61,10 +69,6 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 ### 17. Corrigido Bugs visuais e no ataque do jogador 2.
 
-
-
-teste em http://samuraiz.online/
-
-
+</details>
 
 
