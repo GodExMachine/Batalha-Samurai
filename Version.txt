@@ -1,5 +1,4 @@
-preciso corrigir as imagens o ataque especial do player editando as imagens
-
+Adcionar o atack especial do kinght e do mago
 
 colocar mais mapas (escolher o mapa antes do personagem?)
 

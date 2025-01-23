@@ -119,7 +119,12 @@ function troca1Mack(){
 }
 
 
+/// verificar para por nas functions dos personagem as caractristicas de tamanho da area do dano e quantidade de dano
 
+// verificar tambem uma posibilidade de colocar um custo de stamina para jogar -- talvez essa funcionalidade tem que funcionar 
+// ou nao dependendo da escolha do jogador antes de escolher o personagem
+
+// colocar a funcionalidade de escolher o mapa antes de escolher o personagem e
 
 
 
@@ -738,6 +743,240 @@ comecar()
 
 
 
+// personagem knight para o player 1
+const knight1 =  new Fighter({
+  position:{
+  x:250,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:0,
+y:0
+},
+imageSrc: './img/knight/Idleright.png',
+scale: 3,
+framesMax: 11,
+offset:{
+x: 270,
+y: 190
+},
+sprites:{
+  idle:{
+    imageSrc: './img/knight/Idleright.png',
+    framesMax: 11,
+    offset:{
+      x: 270,
+      y: 190
+      }
+  },
+  runLeft:{
+    imageSrc: './img/knight/Runleft.png',
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 190
+      }   
+  },
+  runRight:{
+    imageSrc: './img/knight/Runright.png',
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 190
+      }   
+  },
+  jump:{
+    imageSrc: './img/knight/Jumpright.png',
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  fall:{
+    imageSrc: './img/knight/Fallright.png',
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 190
+      }  
+  },
+  attack1:{
+    imageSrc: './img/knight/Attack1right.png',
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 190
+      } 
+  },
+  attack3:{
+    imageSrc: './img/knight/Attack3right.png',
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  takeHit:{
+    imageSrc: './img/knight/takehitleft.png',
+    framesMax: 4,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  death:{
+    imageSrc: './img/knight/Deathright.png',
+    framesMax: 11,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  }
+},
+attackBox:{
+  offset:{
+    x:100,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+})
+function troca1knight(){
+player = knight1
+framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp1").innerHTML = ''
+p1ok = true
+comecar()
+}
+
+
+
+
+
+
+
+// personagem knight para o player 2
+const knight2 =  new Fighter({
+  position:{
+  x:726,
+  y:200
+},
+velocity:{
+  x:0,
+  y:0
+},
+offset:{
+x:-50,
+y:0
+},
+imageSrc: './img/knight/Idleleft.png',
+scale: 3,
+framesMax: 11,
+offset:{
+x: 215,
+y: 190
+},
+sprites:{
+  idle:{
+    imageSrc: './img/knight/Idleleft.png',
+    framesMax: 11,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  runLeft:{
+    imageSrc: './img/knight/Runleft.png',
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 190
+      }   
+  },
+  runRight:{
+    imageSrc: './img/knight/Runright.png',
+    framesMax: 8,
+    offset:{
+      x: 215,
+      y: 190
+      }   
+  },
+  jump:{
+    imageSrc: './img/knight/Jumpleft.png',
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  fall:{
+    imageSrc: './img/knight/Fallleft.png',
+    framesMax: 3,
+    offset:{
+      x: 215,
+      y: 190
+      }  
+  },
+  attack1:{
+    imageSrc: './img/knight/Attack1left.png',
+    framesMax: 7,
+    offset:{
+      x: 215,
+      y: 190
+      } 
+  },
+  attack3:{
+    imageSrc: './img/knight/Attack3left.png',
+    framesMax: 7,
+    offset:{
+      x: 730,
+      y: 190
+      }
+  },
+  takeHit:{
+    imageSrc: './img/knight/takeHitleft.png',
+    framesMax: 4,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  },
+  death:{
+    imageSrc: './img/knight/deathleft.png',
+    framesMax: 11,
+    offset:{
+      x: 215,
+      y: 190
+      }
+  }
+},
+attackBox:{
+  offset:{
+    x:-165,
+    y:50
+  },
+  width: 165,
+  height: 50
+}
+
+
+})
+function troca2knight(){
+enemy = knight2
+framecolisaop2 = 4  
+document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
+document.getElementById("escolhacharp2").innerHTML = ''
+p2ok = true
+comecar()
+}
 
 
 
