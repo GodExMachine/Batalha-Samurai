@@ -1,11 +1,4 @@
-#criando um jogo de luta em JS.
-
-http://samuraiz.online/
-
-
-
-
-
+#criando um jogo de luta criado usando JavaScrip CSS e HTML.
 
 <details>
   <summary>Detalhes das Atualizações. </summary>
@@ -71,4 +64,6 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 </details>
 
+Teste o Jogo em 
+http://samuraiz.online/
 
