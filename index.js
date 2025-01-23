@@ -59,7 +59,7 @@ function fundoescolhido(){
   }else
   if(numbackground === 3){
     background3.update()
-  }
+  }else 
   if(numbackground === 4){
     background4.update()
   }
