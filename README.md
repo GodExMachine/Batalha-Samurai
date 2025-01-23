@@ -1,7 +1,7 @@
-#criando um jogo de luta criado JavaScrip CSS e HTML.
+###criando um jogo de luta criado JavaScrip CSS e HTML.
 
 
-Teste o Jogo em 
+## Teste o Jogo em 
 ## http://samuraiz.online/
 
 <details>
