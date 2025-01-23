@@ -198,6 +198,7 @@ const keys = {
     if(bolsashuriken > 0 && timer < tempodopoder ){
         player.attackBox.offset.x = 90 //posiçao
         player.attackBox.width = 630//tamanho
+        
         keys.chu.pressed = true  
         player.attackshuriken()
         console.log('churiquem de fogoooooo!')

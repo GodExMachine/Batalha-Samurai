@@ -194,7 +194,7 @@ function animate(){
 
 
     //caso o player erre o ataque
-    if( player.isAttacking && player.frameCurrent === 4 ){
+    if( player.isAttacking && player.frameCurrent === framecolisaop1  ){
       player.isAttacking = false  
     }
 
@@ -224,7 +224,7 @@ function animate(){
 
 
      //caso  o inimigo erre o ataque
-     if( enemy.isAttacking && enemy.frameCurrent === 2 ){
+     if( enemy.isAttacking && enemy.frameCurrent === framecolisaop2 ){
       enemy.isAttacking = false 
      }
 
