@@ -445,10 +445,10 @@ offset:{
          }
     },
     attack3:{
-      imageSrc: './img/kenji/attack3right.png',   // mudar para lef
+      imageSrc: './img/kenji/attack3left.png',   // mudar para lef
       framesMax: 4,
       offset:{
-        x: 730, /// mecher aqui
+        x: 710, /// mecher aqui
         y: 170 /// mecher aqui
          }
     },
