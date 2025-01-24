@@ -74,7 +74,15 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 ### 21. Foram feitas as modificações que permitirão ajustes para que cada personagem tenha suas próprias características
 
-### 22. Pequenos ajustes nas características dos personagens Mack e Kenji..
+### 22. Pequenos ajustes nas características dos personagens Mack e Kenji.
+
+### 23. Pequenos ajustes nas características dos personagens kinght e Warrior.
+
+### 24. Pequenos ajustes nas características do personagem Evil Wizard.
+
+### 25. Ajustes nos danos, altura dos pulos, distancia dos ataques e velicidade de movimento de todos os personagens.
+
+### 26. Criados os Sprites de Kinght e Evil Wizard para os ataques especias.
 
 </details>
 
