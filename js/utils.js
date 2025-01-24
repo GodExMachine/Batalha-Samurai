@@ -67,7 +67,7 @@ function somatempo(){
     
     }
 
-     if(timer === 25){
+     if(timer === 30){
       bolsashuriken = bolsashuriken + 2
       bolsasuperpower = bolsasuperpower + 2
      }

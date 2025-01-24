@@ -636,10 +636,10 @@ attackBox:{
 })
 function troca1Warrior(){
   danoPlayer = 25
-  VelEsquerdaPlayer = -5
-  VelDireitaPlayer = 5
-  AltPuloPlayer = -25
-  alturaLiberaPuloP1 = 329 
+  VelEsquerdaPlayer = -4
+  VelDireitaPlayer = 4
+  AltPuloPlayer = -17
+  alturaLiberaPuloP1 = 329
   bolsashuriken = 3
   DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
 
@@ -760,11 +760,11 @@ attackBox:{
 })
 function troca2Warrior(){
   if (p1ok === true) {
-    danoInimigo = 20
-    VelEsquerdaInimigo = -5
-    VelDireitaInimigo = 5
-    AltPuloInimigo = -15
-    alturaLiberaPuloP2 = 129
+    danoInimigo = 25
+    VelEsquerdaInimigo = -4
+    VelDireitaInimigo = 4
+    AltPuloInimigo = -17
+    alturaLiberaPuloP2 = 329
     bolsasuperpower = 3
     DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
 
@@ -822,7 +822,7 @@ sprites:{
     imageSrc: './img/knight/Runright.png',
     framesMax: 8,
     offset:{
-      x: 215,
+      x: 245,
       y: 190
       }   
   },
@@ -846,7 +846,7 @@ sprites:{
     imageSrc: './img/knight/Attack1right.png',
     framesMax: 7,
     offset:{
-      x: 215,
+      x: 240,
       y: 190
       } 
   },
@@ -886,13 +886,13 @@ attackBox:{
 
 })
 function troca1knight(){
-  danoPlayer = 25
-  VelEsquerdaPlayer = -5
-  VelDireitaPlayer = 5
-  AltPuloPlayer = -25
+  danoPlayer = 34
+  VelEsquerdaPlayer = -3.5
+  VelDireitaPlayer = 3.5
+  AltPuloPlayer = -15
   alturaLiberaPuloP1 = 329 
-  bolsashuriken = 3
-  DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
+  bolsashuriken = 1
+  DistanciaAttackP1 = {dist: 60, larg: 105, alt: 0}
   
 player = knight1
 framecolisaop1 = 3  /// o frame de colisão é o valor da metade dos frames
@@ -945,7 +945,7 @@ sprites:{
     imageSrc: './img/knight/Runright.png',
     framesMax: 8,
     offset:{
-      x: 215,
+      x: 240,
       y: 190
       }   
   },
@@ -1011,13 +1011,13 @@ attackBox:{
 })
 function troca2knight(){
   if (p1ok === true) {
-    danoInimigo = 20
-    VelEsquerdaInimigo = -5
-    VelDireitaInimigo = 5
+    danoInimigo = 34
+    VelEsquerdaInimigo = -3.5
+    VelDireitaInimigo = 3.5
     AltPuloInimigo = -15
-    alturaLiberaPuloP2 = 129
-    bolsasuperpower = 3
-    DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
+    alturaLiberaPuloP2 = 329
+    bolsasuperpower = 1
+    DistanciaAttackP2 =  {dist: -110, larg: 105, alt: 0}
 
 enemy = knight2
 framecolisaop2 = 4  
@@ -1105,7 +1105,7 @@ sprites:{
   },
   attack3:{
     imageSrc: './img/evilwizard/Attack3right.png',
-    framesMax: 7,
+    framesMax: 4,
     offset:{
       x: 320,
       y: 270
@@ -1139,12 +1139,12 @@ attackBox:{
 
 })
 function troca1EvilWizard(){
-  danoPlayer = 25
-  VelEsquerdaPlayer = -5
-  VelDireitaPlayer = 5
-  AltPuloPlayer = -25
+  danoPlayer = 50
+  VelEsquerdaPlayer = -2.5
+  VelDireitaPlayer = 2.5
+  AltPuloPlayer = -15
   alturaLiberaPuloP1 = 329 
-  bolsashuriken = 3
+  bolsashuriken = 0
   DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
 
 player = EvilWizard1
@@ -1233,9 +1233,9 @@ sprites:{
   },
   attack3:{
     imageSrc: './img/evilwizard/Attack3left.png',
-    framesMax: 7,
+    framesMax: 4,
     offset:{
-      x: 730,
+      x: 830,
       y: 270
       }
   },
@@ -1269,12 +1269,12 @@ attackBox:{
 })
 function troca2EvilWizard(){
   if (p1ok === true) {
-    danoInimigo = 20
-    VelEsquerdaInimigo = -5
-    VelDireitaInimigo = 5
+    danoInimigo = 50
+    VelEsquerdaInimigo = -2
+    VelDireitaInimigo = 2
     AltPuloInimigo = -15
-    alturaLiberaPuloP2 = 129
-    bolsasuperpower = 3
+    alturaLiberaPuloP2 = 329
+    bolsasuperpower = 0
     DistanciaAttackP2 =  {dist: -190, larg: 165, alt: 0}
 
 enemy = EvilWizard2
