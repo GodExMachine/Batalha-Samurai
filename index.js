@@ -93,18 +93,28 @@ var numbackground = 1
 function backgroud1(){
   numbackground = 1
   background4.update()
+  document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
+  document.getElementById("escolhepemapa").innerHTML = ''
+  
 }
 function backgroud2(){
   numbackground = 2
   background4.update()
+  document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
+  document.getElementById("escolhepemapa").innerHTML = ''
 }
 function backgroud3(){
   numbackground = 3
   background4.update()
+  document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
+  document.getElementById("escolhepemapa").innerHTML = ''
 }
 function backgroud4(){
   numbackground = 4
   background4.update()
+  document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
+  document.getElementById("escolhepemapa").innerHTML = ''
+
 }
 
 

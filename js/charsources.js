@@ -3,13 +3,11 @@ var framecolisaop2 = undefined
 
 
 
-
 /// verificar para por nas functions dos personagem as caractristicas de tamanho da area do dano e quantidade de dano
 
 // verificar tambem uma posibilidade de colocar um custo de stamina para jogar -- talvez essa funcionalidade tem que funcionar 
 // ou nao dependendo da escolha do jogador antes de escolher o personagem
 
-// colocar a funcionalidade de escolher o mapa antes de escolher o personagem e
 
 
 //-----------------------------------------------------//
