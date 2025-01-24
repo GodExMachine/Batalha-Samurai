@@ -44,10 +44,23 @@ var background4 = new Sprite({
   imageSrc: './img/background4.png'
 })
   
+//imagem da lojinha
+const shop = new Sprite({
+  position:{
+    x: 640,
+    y: 138
+  },
+  imageSrc: './img/shop.png',
+  scale: 2.67,
+  framesMax: 6
+  
+  
+})
 
 
-//esta função muda o numero para a proxima função trocar o fundo
-var numbackground = 1
+
+
+//esta função muda o numero para a proxima função trocar o fundo <-- remover apos a proxima atulização
 function trocafundo(){
   numbackground++
 }
@@ -68,33 +81,43 @@ function fundoescolhido(){
     shop.update() //desenha a lojinha
   }
 }
-
-
-
-
-//imagem da lojinha
-const shop = new Sprite({
-  position:{
-    x: 640,
-    y: 138
-  },
-  imageSrc: './img/shop.png',
-  scale: 2.67,
-  framesMax: 6
-  
-  
-})
+// até aqui 
 
 
 
 
 
 
+// aqui muda o fundo direto par ao 4 //<--- usar esse estilo de funcao para a proxima atualizada
+var numbackground = 1
+function backgroud1(){
+  numbackground = 1
+  background4.update()
+}
+function backgroud2(){
+  numbackground = 2
+  background4.update()
+}
+function backgroud3(){
+  numbackground = 3
+  background4.update()
+}
+function backgroud4(){
+  numbackground = 4
+  background4.update()
+}
+
+
+
+
+
+
+
+// Exibe aviso se for um dispositivo móvel
 function isMobileDevice() {
   return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// Exibe aviso se for um dispositivo móvel
 if (isMobileDevice()) {
   document.getElementById('mobile-warning').style.display = 'block';
   document.getElementById('main-content').style.display = 'none';
