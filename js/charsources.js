@@ -261,6 +261,7 @@ function troca2Mack(){
   document.getElementById("escolhacharp2").innerHTML = ''
   p2ok = true
   comecar()
+  guiabotoes()
  }
 }
 
@@ -393,6 +394,7 @@ function troca1Kenji(){
   document.getElementById("escolhacharp1").innerHTML = ''
   p1ok = true
   comecar()
+  
  }
 
 
@@ -522,6 +524,7 @@ function troca2Kenji(){
   document.getElementById("escolhacharp2").innerHTML = ''
   p2ok = true
   comecar()
+  guiabotoes()
  }
 }
 
@@ -774,6 +777,7 @@ document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+guiabotoes()
   }
 }
 
@@ -1025,6 +1029,7 @@ document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+guiabotoes()
   }
 }
 
@@ -1283,6 +1288,7 @@ document.getElementById("escolhacharp2").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp2").innerHTML = ''
 p2ok = true
 comecar()
+guiabotoes()
   }
 }
 
