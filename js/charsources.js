@@ -977,8 +977,8 @@ sprites:{
     imageSrc: './img/knight/Attack3left.png',
     framesMax: 4,
     offset:{
-      x: 730,
-      y: 190
+      x: 810,
+      y: 230
       }
   },
   takeHit:{
