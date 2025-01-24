@@ -25,15 +25,17 @@ var p1ok = false
 var p2ok = false
 
 
+
+
 function comecar(){
   if(p1ok && p2ok){
     decreaseTimer()
+    
+     
   }
 
 
-
 }
-
 
 
 

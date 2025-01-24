@@ -852,10 +852,10 @@ sprites:{
   },
   attack3:{
     imageSrc: './img/knight/Attack3right.png',
-    framesMax: 7,
+    framesMax: 4,
     offset:{
-      x: 215,
-      y: 190
+      x: 290,
+      y: 230
       }
   },
   takeHit:{
@@ -895,7 +895,7 @@ function troca1knight(){
   DistanciaAttackP1 = {dist: 80, larg: 165, alt: 0}
   
 player = knight1
-framecolisaop1 = 4  /// o frame de colisão é o valor da metade dos frames
+framecolisaop1 = 3  /// o frame de colisão é o valor da metade dos frames
 document.getElementById("escolhacharp1").classList.remove("divbotaoescolha");
 document.getElementById("escolhacharp1").innerHTML = ''
 p1ok = true
@@ -975,7 +975,7 @@ sprites:{
   },
   attack3:{
     imageSrc: './img/knight/Attack3left.png',
-    framesMax: 7,
+    framesMax: 4,
     offset:{
       x: 730,
       y: 190
