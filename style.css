@@ -296,8 +296,7 @@ canvas{
     z-index: 3;
     position: absolute;
     padding-top: 80px;
-    background-color: lightskyblue;
-    /*background-image: url(/img/);*/
+    /*background-color: lightskyblue;*/
     width:1024;
     height:576;
 }

@@ -43,6 +43,14 @@ var background4 = new Sprite({
   },
   imageSrc: './img/background4.png'
 })
+
+var background5 = new Sprite({
+  position:{
+    x: 0,
+    y: 0
+  },
+  imageSrc: './img/background5.png'
+})
   
 //imagem da lojinha
 const shop = new Sprite({
@@ -57,16 +65,14 @@ const shop = new Sprite({
   
 })
 
+var numbackground = 1
 
 
 
-//esta função muda o numero para a proxima função trocar o fundo <-- remover apos a proxima atulização
-function trocafundo(){
-  numbackground++
-}
 
 ///esta função muda a imagen de fundo
 function fundoescolhido(){
+
   if(numbackground === 2){
     background2.update()
   }else
@@ -75,12 +81,17 @@ function fundoescolhido(){
   }else 
   if(numbackground === 4){
     background4.update()
-  }
-  else{
-    background1.update()
+  }else
+  if((numbackground === 5)){
+    background5.update()
     shop.update() //desenha a lojinha
+  }else
+  if(numbackground === 1){
+    background1.update()
+    numbackground = 1
   }
 }
+
 // até aqui 
 
 
@@ -89,33 +100,34 @@ function fundoescolhido(){
 
 
 // aqui muda o fundo direto par ao 4 //<--- usar esse estilo de funcao para a proxima atualizada
-var numbackground = 1
+
+
 function backgroud1(){
   numbackground = 1
-  background4.update()
   document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
-  document.getElementById("escolhepemapa").innerHTML = ''
-  
+  document.getElementById("escolhepemapa").innerHTML = '' 
 }
 function backgroud2(){
   numbackground = 2
-  background4.update()
   document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
   document.getElementById("escolhepemapa").innerHTML = ''
 }
 function backgroud3(){
   numbackground = 3
-  background4.update()
   document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
   document.getElementById("escolhepemapa").innerHTML = ''
 }
 function backgroud4(){
   numbackground = 4
-  background4.update()
   document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
   document.getElementById("escolhepemapa").innerHTML = ''
-
 }
+function backgroud5(){  
+  numbackground = 5 
+  document.getElementById("escolhepemapa").classList.remove("divEscolhemapa");
+  document.getElementById("escolhepemapa").innerHTML = ''
+}
+
 
 
 
