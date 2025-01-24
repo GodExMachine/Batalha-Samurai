@@ -72,6 +72,9 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 ### 20. Iserido um novo personagem.
 
+### 21. Foram feitas as modificações que permitirão ajustes para que cada personagem tenha suas próprias características
+
+### 22. Pequenos ajustes nas características dos personagens Mack e Kenji..
 
 </details>
 
